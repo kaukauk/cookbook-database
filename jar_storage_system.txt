@@ -64,29 +64,29 @@ process at home. Three DIY blends are pre-made because grinding
 6-8 spices mid-cook is impractical.
 
 WHOLE SPICES (8)
-  1. Mustard seeds (black)
-  2. Fennel seeds
+  1. Mustard seeds (black) -
+  2. Fennel seedsv -
   3. Black peppercorns
-  4. Cinnamon sticks
-  5. Bay leaves
+  4. Cinnamon sticks -
+  5. Bay leaves -
   6. Star anise (whole pods)
   7. Poppy seeds (white / khus-khus)
   8. Sesame seeds (white)
 
 GROUND-ONLY SPICES (2)
-  9. Turmeric
- 10. Kashmiri / Deggi chile powder
+  9. Turmeric -
+ 10. Kashmiri / Deggi chile powder -
 
 DIY BLENDS, PRE-MADE (3)
- 11. Garam masala (Punjabi / Warming) -- refill every 3-4 weeks
- 12. Chaat masala (Cooling blend)     -- refill every 4-6 weeks
- 13. Panch phoron (Bengali 5-spice, whole) -- 4 month batch
+ 11. Garam masala (Punjabi / Warming) -- refill every 3-4 weeks x
+ 12. Chaat masala (Cooling blend)     -- refill every 4-6 weeks x
+ 13. Panch phoron (Bengali 5-spice, whole) -- 4 month batch x
 
 DRIED HERBS / BULKY DRIED ITEMS (4)
- 14. Kasuri methi (dried fenugreek leaves)
- 15. Dried curry leaves (backup if no fresh plant)
+ 14. Kasuri methi (dried fenugreek leaves) -
+ 15. Dried curry leaves (backup if no fresh plant) x
  16. Kokum petals
- 17. Dried coconut (desiccated, working stock)
+ 17. Dried coconut (desiccated, working stock) x
 
 NUT / DRIED-FRUIT WORKING STOCK (3)
  18. Cashews (raw, whole)
@@ -103,7 +103,7 @@ These are the front-row foundations. Big enough to give a
   1. Salt
   2. Cumin seeds (whole)
   3. Coriander seeds (whole)
-  4. Cayenne
+  4. Cayenne x
   5. Dried red chiles (whole)
   6. Sugar
 
@@ -117,16 +117,16 @@ called for in true bulk quantities. The cashew / peanut /
 raisin / dried-coconut jars at this size are the refill
 source for the same items at 45 ml.
 
-  1. Cashews (bulk)
-  2. Peanuts (bulk)
-  3. Almonds (raw, whole)
-  4. Pistachios (shelled)
-  5. Walnuts (halves)
+  1. Cashews (bulk) -
+  2. Peanuts (bulk) -
+  3. Almonds (raw, whole) -
+  4. Pistachios (shelled) /
+  5. Walnuts (halves) /
   6. Golden raisins (bulk)
-  7. Dates (pitted)
-  8. Dried apricots (jardaloo)
-  9. Pine nuts (chilgozae)
- 10. Dried coconut (desiccated, bulk)
+  7. Dates (pitted) /
+  8. Dried apricots (jardaloo) /
+  9. Pine nuts (chilgozae) /
+ 10. Dried coconut (desiccated, bulk) x
  11. Cracked wheat (dalia)
  12. Sabudana (pearl tapioca)
 
@@ -137,11 +137,11 @@ source for the same items at 45 ml.
 Working-stock containers for daily-frequency dals and flours.
 Refill from 1 kg bags in the cupboard.
 
-  1. Chana dal (yellow split peas)        -- ~200 g capacity
-  2. Moong dal (split mung, skinned)      -- ~210 g
-  3. Masoor dal (split red lentils)       -- ~195 g
+  1. Chana dal (yellow split peas)        -- ~200 g capacity /
+  2. Moong dal (split mung, skinned)      -- ~210 g /
+  3. Masoor dal (split red lentils)       -- ~195 g /
   4. Besan (chickpea flour / gram flour)  -- ~95 g
-  5. Semolina (sooji / rava)              -- ~165 g
+  5. Semolina (sooji / rava)              -- ~165 g /
 
 
 ================================================================
@@ -154,7 +154,7 @@ from larger cupboard bags (5-10 kg for rice, 5 kg for atta,
   1. Basmati rice                         -- ~280 g capacity
   2. Atta (whole-wheat flour)             -- ~175 g
   3. Toovar dal (split pigeon peas)       -- ~280 g
-  4. Urad dal (skinned split)             -- ~290 g
+  4. Urad dal (skinned split)             -- ~290 g ?
   5. Whole chickpeas (kabuli chana)       -- ~220 g
 
 
@@ -163,17 +163,17 @@ WHAT'S NOT IN ANY JAR
 ================================================================
 
 BOTTLED WET ITEMS (kept in original packaging on a shelf)
-  - Tamarind concentrate
-  - Rose water
-  - Kewra water (screw pine)
-  - Honey
-  - Malt vinegar
-  - Soy sauce
-  - Sesame oil (toasted / gingelly)
-  - Mustard oil
-  - Coconut oil
-  - Vegetable oil
-  - Ghee (in its own larger jar)
+  - Tamarind concentrate /
+  - Rose water x
+  - Kewra water (screw pine) x
+  - Honey /
+  - Malt vinegar x
+  - Soy sauce /
+  - Sesame oil (toasted / gingelly) /
+  - Mustard oil x
+  - Coconut oil /
+  - Vegetable oil /
+  - Ghee (in its own larger jar) /
 
 FRESH / REFRIGERATED
   - Ginger root, garlic, green chiles, onions, fresh herbs
@@ -192,16 +192,16 @@ DEEP-BULK CUPBOARD BAGS (refill source for the jars)
     cayenne, dried red chiles
 
 SEALED-BAG BACKUP TIER (occasional-use items not on rack)
-  - Paprika
-  - Ground cinnamon
-  - Ground cardamom
-  - Rajma (red kidney beans, dried)
+  - Paprika /
+  - Ground cinnamon /
+  - Ground cardamom /
+  - Rajma (red kidney beans, dried) /
   - Rice flour
-  - Brown rice
-  - Whole moong, whole urad, whole masoor
-  - Moth beans
-  - Black-eyed peas
-  - Horse gram
+  - Brown rice x
+  - Whole moong, whole urad, whole masoor ?
+  - Moth beans x
+  - Black-eyed peas x
+  - Horse gram x
 
 
 ================================================================

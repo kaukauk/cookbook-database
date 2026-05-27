@@ -1,0 +1,64 @@
+================================================================
+DUPLICATES IN YOUR CART
+================================================================
+Items currently in your cart that you ALREADY HAVE based on
+current-ingredients.txt. Consider removing.
+================================================================
+
+
+----------------------------------------------------------------
+ACTUAL DUPLICATES -- REMOVE FROM CART
+----------------------------------------------------------------
+
+1. 100g Fenugreek Seeds (Methi Seed)  -- £0.59
+   You already have "fenugreek seeds" listed in your whole
+   spices. Unless you're running low, remove this.
+
+2. Bay Leaves (Dried Bay Leaf)         -- £0.79
+   You already have "bay leaves dry" listed in your spices.
+   Bay leaves keep for a year+ -- you don't need more.
+
+   Potential savings: £1.38
+
+
+----------------------------------------------------------------
+NOT DUPLICATES -- KEEP THESE (your current versions are different)
+----------------------------------------------------------------
+
+These look like duplicates at first glance but they're actually
+different forms / not redundant:
+
+  - 100g Coriander Seeds          -- you have ground dhania,
+                                     not whole; KEEP for grinding
+                                     fresh
+  - 100g Black Peppercorns        -- you have ground black
+                                     pepper, not whole; KEEP
+                                     for peppermill
+  - 100g Cinnamon Quills          -- you have "sweet cinnamon"
+                                     ground; KEEP for whole
+                                     sticks
+  - 100g Black Mustard Seeds      -- you noted "few mustard
+                                     seeds, need refill"; KEEP
+                                     as the refill
+  - Whole Nutmegs (Jaifal)        -- you have ground (or pre-
+                                     ground?) nutmeg; KEEP whole
+                                     for fresh grating
+  - 100g Ginger Powder (sonth)    -- distinct from fresh ginger;
+                                     used in chai/winter blends
+
+
+----------------------------------------------------------------
+UNEXPECTED ADDITION (not a duplicate, but flagging)
+----------------------------------------------------------------
+
+  - Kaffir Lime Leaf 5g           -- £1.49
+    Not in the shopping list. Only ~2 recipes in 660 Curries
+    call for kaffir lime leaves (Thai-influenced chicken).
+    Worth £1.49 if you cook Thai-Indian fusion, otherwise
+    optional. Keeps frozen indefinitely if you don't use it
+    immediately.
+
+
+================================================================
+END
+================================================================

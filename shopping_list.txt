@@ -1,0 +1,173 @@
+================================================================
+SHOPPING LIST -- INGREDIENTS YOU NEED TO BUY
+================================================================
+Based on diff between current-ingredients.txt and the planned
+63-jar setup (+ plastic containers + bags).
+
+Items marked [REFILL] = you have some but running low.
+Items marked [VERIFY] = probably in your kitchen but not listed.
+================================================================
+
+
+----------------------------------------------------------------
+INDIAN GROCERY -- WHOLE SPICES (for 10ml / 25ml / 45ml jars)
+----------------------------------------------------------------
+
+  10 ml jars
+  - Saffron threads (kesar) -- small box, lasts a year /
+  - Asafetida (hing) -- small tin, very pungent powder
+  - Mace blades (jaipatri) -- few grams in a packet /
+  - Whole nutmeg (jaiphal) -- 5-6 whole nuts, last a year /
+  - Ground ginger (sonth) -- small packet /
+
+  25 ml jars
+  - Black cardamom pods (badi elaichi) /
+  - Nigella seeds (kalonji) /
+  - Black cumin (shahi zeera) -- NOT regular cumin; smaller and darker /
+  - Bishop's weed (ajwain / carom seeds) /
+  - Dried pomegranate seeds (anardana) /
+  - Black salt (kala namak) -- pink-grey, sulfurous smell /
+
+  45 ml jars -- WHOLE versions of spices you currently have ground
+  - Black peppercorns (whole) -- you have ground; need whole for grinder /
+  - Cinnamon sticks -- you have "sweet cinnamon" ground; need whole sticks /
+  - Star anise (whole pods) /
+  - Sesame seeds (white til) /
+  - Mustard seeds (black) -- [REFILL] you noted running low /
+
+  85 ml jars
+  - Coriander seeds (whole) -- you have ground dhania; need whole for grinding fresh /
+  - Cayenne (ground red chile powder) -- different from your Kashmiri chilli powder x
+  - Dried red chiles (whole) -- the bulky bag of dried whole chiles /
+
+  Dried herbs / specialty (45 ml jars)
+  - Kokum petals (dried mangosteen rind, sour souring agent) /
+  - Dried coconut (desiccated, unsweetened) x
+
+
+----------------------------------------------------------------
+INDIAN GROCERY -- BLENDS YOU NEED (for 45 ml jars)
+----------------------------------------------------------------
+  - Chaat masala (or make DIY from your spices) x
+  - Panch phoron (Bengali 5-spice -- or just pre-mix from
+    cumin + fennel + fenugreek + nigella + mustard seeds
+    once you have nigella) /
+
+
+----------------------------------------------------------------
+INDIAN GROCERY -- NUTS / DRIED FRUITS (for 45 ml + 120 ml jars)
+----------------------------------------------------------------
+  - Peanuts (raw, skinless or skin-on) -- big bag -
+  - Pistachios (shelled, unsalted) -
+  - Walnuts (halves) -
+  - Golden raisins (kishmish) /
+  - Dates (pitted, medjool or regular) -
+  - Dried apricots (jardaloo) -
+  - Pine nuts (chilgozae) -- expensive; optional -
+  - Cracked wheat (dalia / lapsi) /
+  - Sabudana (pearl tapioca) /
+
+
+----------------------------------------------------------------
+INDIAN GROCERY -- BULK PANTRY (250ml / 350ml jars + bags)
+----------------------------------------------------------------
+
+  Working-stock jars
+  - Besan (chickpea flour / gram flour) -- 1 kg bag /
+  - Semolina (sooji / rava) -- 1 kg bag /
+  - Atta (whole-wheat flour for chapati) -- 5 kg bag /
+
+  Bags / plastic containers
+  - Rajma (red kidney beans, dried) /
+  - Black-eyed peas (lobhia / chowli) /
+  - Cornstarch -
+  - Maida (all-purpose flour) -- 1 kg -
+  - Rice flour -- 1 kg (you have rice flakes; not the same) /
+  - Plain long-grain rice (for South Indian dishes, separate
+    from basmati) - ill just use basmati?
+
+
+----------------------------------------------------------------
+INDIAN GROCERY -- BOTTLED LIQUIDS
+----------------------------------------------------------------
+  - Rose water (gulab jal) -- small glass bottle /
+  - Kewra water (screw pine essence) -- small bottle /
+  - Mustard oil (kacchi ghani, cold-pressed) -- for Bengali /
+    Bihari cooking; very pungent /
+  - Malt vinegar -- for Goan/Anglo-Indian dishes (sometimes
+    in regular supermarket too) - tesco
+
+
+----------------------------------------------------------------
+REGULAR SUPERMARKET
+----------------------------------------------------------------
+  - Honey -
+  - Malt vinegar (if not at Indian grocery)
+  - Bread buns (paav / fresh sandwich buns) -- buy fresh as
+    needed for paav bhajee etc.
+
+
+----------------------------------------------------------------
+[VERIFY] -- PROBABLY ALREADY IN YOUR KITCHEN
+----------------------------------------------------------------
+Not listed in your inventory but I assumed you have these.
+Check before shopping:
+  - Salt (table or sea) - have
+  - Sugar (granulated) - have
+  - Basmati rice - have
+  - Ghee (or make from butter) - have
+  - Butter - have
+  - Soy sauce (light) - have
+  - Baking powder - tesco
+
+
+================================================================
+WHAT YOU HAVE THAT'S NOT IN MY PLAN
+================================================================
+You have some extras worth keeping:
+
+  - Sambar powder      -- South Indian blend; useful for
+                          sambhar, rasam, kootu
+  - Olive oil          -- not Indian but useful for non-Indian
+                          cooking
+  - Roasted vermicelli -- for semiya upma / kheer
+  - Rice flakes (poha) -- for poha breakfast, dahi chivda
+  - Pottukadlai (roasted gram) -- for South Indian chutneys,
+                                  binding
+
+
+================================================================
+ITEMS YOU HAVE GROUND, NOT WHOLE
+================================================================
+You can keep using the ground versions you have, but for the
+"prefer whole, grind fresh" workflow these need whole equivalents:
+
+  Already-ground -> need whole version
+  - Ground cumin     -> have whole cumin seeds, good
+  - Dhania (ground)  -> need WHOLE coriander seeds
+  - Black pepper     -> need WHOLE peppercorns
+  - Sweet cinnamon   -> need WHOLE cinnamon sticks
+  - Nutmeg (ground?) -> need WHOLE nutmeg + microplane
+
+The ground forms can stay in the bagged backup tier for
+emergency use; the whole versions go in the spice rack.
+
+
+================================================================
+SHOPPING TRIP SUMMARY
+================================================================
+
+ONE TRIP TO AN INDIAN GROCERY should cover:
+  Whole spices         ~13 items
+  Blends/specialty     ~2 items (or make DIY)
+  Nuts/dried fruits    ~9 items
+  Bulk pantry          ~9 items
+  Bottled liquids      ~4 items
+  Total: ~37 items
+
+After this trip, you'll have everything needed to make
+~90% of the recipes in 660 Curries.
+
+================================================================
+END
+================================================================

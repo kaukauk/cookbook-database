@@ -1,0 +1,107 @@
+================================================================
+MISSING FROM YOUR CART (updated with your notes)
+================================================================
+Based on your annotations: you already have honey, malt vinegar,
+cornstarch, atta, and a coarse roasted semolina. Many other items
+are at Tesco rather than the Indian grocery. Two items
+(asafetida, cayenne) the Indian store doesn't stock well.
+================================================================
+
+
+----------------------------------------------------------------
+ALREADY HAVE -- RESOLVED, NO ACTION NEEDED
+----------------------------------------------------------------
+  + Dried coconut         -- added to cart
+  + Atta (whole-wheat)    -- you have it
+  + Semolina              -- you have coarse roasted version
+                             (close enough for most uses)
+  + Honey                 -- you have it
+  + Malt vinegar          -- you have it
+  + Cornstarch            -- you have it
+
+
+----------------------------------------------------------------
+STILL MISSING -- INDIAN GROCERY ORDER
+----------------------------------------------------------------
+
+  - Chaat masala            -- or DIY once you have asafetida +
+                               ginger powder (you'll have amchur,
+                               black salt, cumin, black pepper
+                               after this order)
+
+
+----------------------------------------------------------------
+TESCO -- STANDARD SUPERMARKET RUN
+----------------------------------------------------------------
+
+SPICES (Tesco's spice aisle / world food aisle)
+  - Cayenne pepper          -- Tesco DOES carry this in their
+                               standard spice aisle ("Tesco
+                               Cayenne Pepper" or Schwartz);
+                               you noted Indian store didn't
+                               have it
+  - Asafetida (hing)        -- try Tesco's world food / Indian
+                               aisle; brands to look for:
+                               LG, MDH, Everest, Vandevi.
+                               Also available on Amazon UK if
+                               not in store
+  - Baking powder
+
+NUTS / DRIED FRUITS (Tesco baking aisle)
+  - Peanuts (raw)
+  - Pistachios (shelled, unsalted)
+  - Walnuts (halves)
+  - Dates (pitted)
+  - Dried apricots
+  - Pine nuts             -- optional; expensive
+
+FLOUR
+  - Maida / AP flour      -- standard Tesco "plain flour"
+
+
+----------------------------------------------------------------
+SKIPPED (your choice / not needed)
+----------------------------------------------------------------
+  - Plain long-grain rice -- you'll use basmati
+  - Bread buns            -- buy fresh as needed
+  - Kaffir lime leaves    -- you removed from cart
+
+
+----------------------------------------------------------------
+TWO BLOCKERS WORTH SOLVING
+----------------------------------------------------------------
+
+1. ASAFETIDA -- 14% of recipes use it; no real substitute
+   Options:
+     a) Check Tesco's world-foods aisle for MDH/Everest/LG/
+        Vandevi brand
+     b) Amazon UK: search "asafetida hing powder" -- LG brand
+        is reliable and ships fast
+     c) Try a different Indian grocer (London has many; even
+        small SE Asian shops carry it)
+   Skip = lose access to ~96 recipes worth of distinctive flavor
+
+2. CAYENNE -- 60% of recipes use it as the main heat source
+   Options:
+     a) Tesco standard spice aisle -- they definitely stock it
+        as "Cayenne Pepper" (Schwartz or own-brand)
+     b) Substitute (lossy): use more Kashmiri chile powder
+        for color + crushed dried red chiles for heat
+   Skip = lose half the book OR work harder per recipe
+
+
+----------------------------------------------------------------
+SUMMARY
+----------------------------------------------------------------
+
+Indian grocery (still to add):
+  1 item -- chaat masala (or DIY)
+
+Tesco run:
+  9 items (cayenne, asafetida, baking powder, peanuts,
+  pistachios, walnuts, dates, dried apricots, AP flour)
+  + optional pine nuts
+
+================================================================
+END
+================================================================
