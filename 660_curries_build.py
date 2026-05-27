@@ -287,7 +287,7 @@ SYNONYMS = {
     'turmeric':['ground turmeric','turmeric powder','haldi','manjal','ground tumeric','tumeric'],
     'cardamom, green':['green cardamom','cardamom pods','green cardamom pods','elaichi','cardamom seeds','cardamom seed','whole green cardamom','whole cardamom pods','cardamom','cardamom seeds from green or white pods','cardamom seeds from green pods'],
     'ground cardamom':['cardamom powder','ground green cardamom','ground cardamom seeds','powdered cardamom','cardamom seeds from green or white pods, ground','cardamom seeds, ground','cardamom seeds ground'],
-    'cardamom, black':['black cardamom','black cardamom pods','badi elaichi','whole black cardamom','cardamom seeds from black pods','cardamom seeds from black pods, ground','cardamom from black pods'],
+    'cardamom, black':['black cardamom','black cardamom pods','badi elaichi','whole black cardamom','cardamom seeds from black pods','cardamom seeds from black pods, ground','cardamom from black pods','seeds from black cardamom pods','seeds from black cardamom pods, ground','seeds from 2 black cardamom pods','seeds from 2 black cardamom pods, ground'],
     'cinnamon':['cinnamon stick','cinnamon sticks','dalchini','cassia','whole cinnamon'],
     'ground cinnamon':['cinnamon powder','cinnamon, ground','powdered cinnamon','ground cassia'],
     'cloves':['clove','lavang','whole cloves'],
@@ -399,6 +399,10 @@ SYNONYMS = {
     'chives':['fresh chives'],
     'jackfruit':['raw jackfruit','canned raw jackfruit','green jackfruit','unripe jackfruit'],
     'flat beans':['flat green beans','italian flat beans'],
+    'yard-long beans':['yard long beans','cut-up yard-long beans','long beans','chinese long beans'],
+    'puff pastry':['frozen puff pastry','frozen puff pastry, completely thawed','puff pastry sheets','puff pastry, thawed'],
+    'wheat berries':['kanak','kanak or wheat berries','whole wheat berries','wheat'],
+    'bread buns':['white bread','white hamburger-style buns','white finger-sandwich-style buns','finger sandwich-style buns','white finger-sandwich-style buns, about 3 inches in diameter','white, finger sandwich-style buns','hamburger buns','dinner rolls','bread rolls','paav','pav buns'],
     'chickpeas':['garbanzo beans','kabuli chana','canned chickpeas','dried chickpeas','white chickpeas'],
     'black chickpeas':['kala chana','desi chana'],
     'green chickpeas':['hara chana'],
@@ -417,9 +421,9 @@ SYNONYMS = {
     'toovar, whole':['whole pigeon peas','sabud toovar','sabud toor','whole yellow pigeon peas'],
     'moth beans':['matki','moth','dew gram'],
     'horse gram':['kulith','kollu'],
-    'cashews':['cashew','cashew nuts','caju','raw cashews'],
-    'almonds':['almond','blanched almonds','slivered almonds','almond, blanched'],
-    'pistachios':['pistachio','shelled pistachios'],
+    'cashews':['cashew','cashew nuts','caju','raw cashews','ground cashew nuts','cashew nuts, ground','cashews, ground','ground cashews'],
+    'almonds':['almond','blanched almonds','slivered almonds','almond, blanched','ground almonds','almonds, ground'],
+    'pistachios':['pistachio','shelled pistachios','shelled pistachio nuts','shelled pistachio','pistachio nuts','unsalted pistachios'],
     'peanuts':['peanut','sengdana','mungphalli','raw peanuts','roasted peanuts'],
     'walnuts':['walnut','walnut halves'],
     'pine nuts':['chilgozae','pinoli'],
@@ -453,7 +457,7 @@ SYNONYMS = {
     'millet flour':['bajra','bajra flour','pearl millet flour'],
     'sorghum flour':['jowar','jowar flour'],
     'semolina':['sooji','rava','farina','cream of wheat'],
-    'papads':['papadum','papadams','papad','papadums','lentil wafers'],
+    'papads':['papadum','papadams','papad','papadums','lentil wafers','uncooked lentil wafers','uncooked lentil wafers, at least 6 inches in diameter','plain lentil wafers'],
     'chicken':['chicken thighs','chicken breast','chicken pieces','whole chicken','bone-in chicken','boneless chicken','skinless chicken','chicken, cut into','murghi'],
     'cornish game hen':['cornish hen','game hen','cornish hens'],
     'duck':['duck breast','duck legs'],
@@ -538,10 +542,13 @@ def extract_ingredient_name(line_text):
     # Strip leading "wild" / "raw" descriptors (not unit, not in unit detector)
     rest = re.sub(r'^(?:wild|raw|live)\s+', '', rest, flags=re.I)
     rest_no_paren = re.sub(r'\([^)]*\)', '', rest).strip()
+    # Collapse "wafers , made from" → "wafers, made from" after paren stripping
+    rest_no_paren = re.sub(r'\s+([,;.])', r'\1', rest_no_paren)
+    rest_no_paren = re.sub(r'\s{2,}', ' ', rest_no_paren)
     # *** Fix #3: split on semicolons and on commas-with-preps.
     # DO NOT split on bare " or " — it drops the actual ingredient
     # (e.g. "coarse kosher or sea salt"). Substring fallback handles those.
-    split_re = r'(?:;|,\s*(?:(?:finely|coarsely|roughly|thinly|lightly|freshly|partially|fully|very)\s+)?(?:chopped|sliced|diced|minced|grated|crushed|halved|quartered|peeled|cored|seeded|stemmed|trimmed|cubed|shredded|julienned|cut|broken|toasted|roasted|softened|melted|drained|rinsed|optional|divided|to taste|or more|or to taste|plus more|preferably|picked over|washed|soaked|skinned|deveined|deboned|boneless|skin-on|warmed|reconstituted|stems? removed|seeds? removed|tail-on|for [a-z\- ]+))'
+    split_re = r'(?:;|,\s*(?:(?:finely|coarsely|roughly|thinly|lightly|freshly|partially|fully|very)\s+)?(?:chopped|sliced|diced|minced|grated|crushed|halved|quartered|peeled|cored|seeded|stemmed|trimmed|cubed|shredded|julienned|cut|broken|toasted|roasted|softened|melted|drained|rinsed|optional|divided|to taste|or more|or to taste|plus more|preferably|picked over|washed|soaked|skinned|deveined|deboned|boneless|skin-on|warmed|reconstituted|stems? removed|seeds? removed|tail-on|made (?:from|of|with)|at least|about|each|approximately|approx\.?|page\b|recipe\b|for [a-z\- ]+))'
     rest_clean = re.split(split_re, rest_no_paren, maxsplit=1)[0]
     # Trailing strip in three passes:
     # 1) Phrases preceded by whitespace
@@ -726,11 +733,20 @@ def build_subrecipe_index(recipes):
 # =================================================================
 def resolve_ingredients(recipes, by_rec_id, sub_titles):
     subrecipe_title_lookup = set(sub_titles.keys())
+    # Equipment / non-ingredient items that should be filtered out entirely
+    NON_INGREDIENT_PATTERNS = (
+        'skewers', 'toothpick', 'bamboo skewers', 'metal skewers',
+        'butcher twine', 'parchment paper', 'aluminum foil',
+        'cheesecloth', 'banana leaves for wrapping',
+    )
     for r in recipes:
         resolved = []
         for ing in r['ingredients_raw']:
             line = ing['line']
             ref_ids = ing['ref_ids']
+            line_lower = line.lower()
+            if any(p in line_lower for p in NON_INGREDIENT_PATTERNS):
+                continue  # skip equipment lines entirely
             amount, unit, name_core = extract_ingredient_name(line)
             # If this line has a cross-ref, the canonical IS the sub-recipe title
             if ref_ids and ref_ids[0] in by_rec_id:

@@ -2,7 +2,7 @@
 
 Total recipes: **692** (of which **40** are sub-recipes used as ingredients elsewhere)
 Main recipes for frequency stats: **652**
-Distinct canonical ingredients: **287**
+Distinct canonical ingredients: **277**
 Global average servings per recipe: **5.72**
 
 Category totals:
@@ -95,7 +95,7 @@ Category totals:
     - vegetable: 1 / 199  (P(ingr|cat)=0.005, P(cat|ingr)=0.5)
 - Density used: 125.0 g/cup
 - Avg servings when present: 7.0 (global avg 5.72)
-- Top co-occurring: 2× vegetable oil, 2× salt, 2× fennel seeds, 2× cilantro, 2× black cumin, 1× yogurt, 1× turmeric, 1× tomato, 1× seeds from 2 black cardamom pods, ground, 1× red chile powder
+- Top co-occurring: 2× vegetable oil, 2× salt, 2× fennel seeds, 2× cilantro, 2× black cumin, 1× yogurt, 1× turmeric, 1× tomato, 1× red chile powder, 1× potato
 - Versatility: 0.2  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### apricots
@@ -203,16 +203,6 @@ Category totals:
 - Top co-occurring: 7× salt, 6× vegetable oil, 5× water, 4× ghee, 4× all-purpose flour, 3× sugar, 3× onion, 3× cumin seeds, 3× cayenne, 3× buttermilk
 - Versatility: 0.756  |  Role(s): unclassified  |  Heat-sensitivity: None
 
-### bamboo or metal skewers
-- Frequency: **7** direct / **7** including sub-recipe expansion (1.07% / 1.07% of 652 main recipes)
-- Appears in 2 categories
-- Category usage (direct):
-    - appetizer: 6 / 52  (P(ingr|cat)=0.115, P(cat|ingr)=0.857)
-    - poultry: 1 / 44  (P(ingr|cat)=0.023, P(cat|ingr)=0.143)
-- Avg servings when present: 6.86 (global avg 5.72)
-- Top co-occurring: 7× vegetable oil, 7× salt, 7× garlic, 7× cayenne, 6× cumin seeds, 5× tomato, 5× ginger, 5× cloves, 5× cinnamon, 5× cilantro
-- Versatility: 0.378  |  Role(s): unclassified  |  Heat-sensitivity: None
-
 ### bamboo shoots
 - Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
 - Appears in 1 categories
@@ -220,15 +210,6 @@ Category totals:
     - vegetable: 1 / 199  (P(ingr|cat)=0.005, P(cat|ingr)=1.0)
 - Avg servings when present: 4.0 (global avg 5.72)
 - Top co-occurring: 1× water, 1× vegetable oil, 1× salt, 1× rice flour, 1× mustard seeds, 1× kudampuli, 1× garlic, 1× fenugreek seeds, 1× dried red chile, 1× curry leaves
-- Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### bamboo skewers
-- Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - meat: 1 / 59  (P(ingr|cat)=0.017, P(cat|ingr)=1.0)
-- Avg servings when present: 6.0 (global avg 5.72)
-- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tomato, 1× toasted cumin-coriander blend, 1× salt, 1× onion, 1× malt vinegar, 1× ginger, 1× garlic, 1× cumin seeds
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### banana
@@ -294,7 +275,7 @@ Category totals:
     - contemporary: 1 / 33  (P(ingr|cat)=0.03, P(cat|ingr)=0.5)
 - Quantity (g): n=2 mean=150.0 median=150.0 range=150.0–150.0 total=300.0
 - Avg servings when present: 5.0 (global avg 5.72)
-- Top co-occurring: 2× vegetable oil, 2× salt, 2× ginger, 2× garlic, 2× cilantro, 1× yogurt sauce with black salt, 1× yogurt, 1× whole-milk cheese, 1× white bread, 1× water
+- Top co-occurring: 2× vegetable oil, 2× salt, 2× ginger, 2× garlic, 2× cilantro, 1× yogurt sauce with black salt, 1× yogurt, 1× whole-milk cheese, 1× water, 1× tomato
 - Versatility: 0.2  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### beef
@@ -431,7 +412,7 @@ Category totals:
 - Quantity (g): n=47 mean=1.02 median=0.13 range=0.04–4.17 total=47.92
 - Density used: 100.0 g/cup
 - Avg servings when present: 5.76 (global avg 5.72)
-- Top co-occurring: 38× salt, 32× black pepper, 31× vegetable oil, 31× cumin seeds, 29× cloves, 28× cardamom, black, 27× ground ginger, 26× onion, 26× garlic, 26× cinnamon
+- Top co-occurring: 38× salt, 32× black pepper, 31× vegetable oil, 31× cumin seeds, 29× cloves, 29× cardamom, black, 27× ground ginger, 26× onion, 26× garlic, 26× cinnamon
 - Versatility: 3.096  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### black pepper
@@ -501,6 +482,17 @@ Category totals:
 - Top co-occurring: 18× salt, 17× vegetable oil, 15× turmeric, 13× cilantro, 13× cayenne, 12× cumin seeds, 8× mustard seeds, 7× coriander seeds, 6× tomato, 6× ginger
 - Versatility: 0.803  |  Role(s): unclassified  |  Heat-sensitivity: None
 
+### bread buns
+- Frequency: **9** direct / **9** including sub-recipe expansion (1.38% / 1.38% of 652 main recipes)
+- Appears in 3 categories
+- Category usage (direct):
+    - appetizer: 7 / 52  (P(ingr|cat)=0.135, P(cat|ingr)=0.778)
+    - biryani: 1 / 11  (P(ingr|cat)=0.091, P(cat|ingr)=0.111)
+    - legume: 1 / 135  (P(ingr|cat)=0.007, P(cat|ingr)=0.111)
+- Avg servings when present: 6.67 (global avg 5.72)
+- Top co-occurring: 9× salt, 9× cilantro, 8× vegetable oil, 8× onion, 8× cayenne, 7× ginger, 7× cumin seeds, 7× coriander seeds, 6× potato, 6× garlic
+- Versatility: 0.628  |  Role(s): unclassified  |  Heat-sensitivity: None
+
 ### broccoli
 - Frequency: **4** direct / **4** including sub-recipe expansion (0.61% / 0.61% of 652 main recipes)
 - Appears in 3 categories
@@ -560,24 +552,25 @@ Category totals:
 - Versatility: 1.384  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### cardamom, black
-- Frequency: **35** direct / **110** including sub-recipe expansion (5.37% / 16.87% of 652 main recipes)
+- Frequency: **37** direct / **111** including sub-recipe expansion (5.67% / 17.02% of 652 main recipes)
 - Appears in 11 categories
 - Category usage (direct):
-    - meat: 10 / 59  (P(ingr|cat)=0.169, P(cat|ingr)=0.286)
-    - legume: 5 / 135  (P(ingr|cat)=0.037, P(cat|ingr)=0.143)
-    - spice_blend: 5 / 36  (P(ingr|cat)=0.139, P(cat|ingr)=0.143)
-    - biryani: 4 / 11  (P(ingr|cat)=0.364, P(cat|ingr)=0.114)
-    - poultry: 4 / 44  (P(ingr|cat)=0.091, P(cat|ingr)=0.114)
-    - vegetable: 4 / 199  (P(ingr|cat)=0.02, P(cat|ingr)=0.114)
-    - cohort: 1 / 45  (P(ingr|cat)=0.022, P(cat|ingr)=0.029)
-    - paneer: 1 / 26  (P(ingr|cat)=0.038, P(cat|ingr)=0.029)
-    - seafood: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.029)
+    - meat: 11 / 59  (P(ingr|cat)=0.186, P(cat|ingr)=0.297)
+    - legume: 5 / 135  (P(ingr|cat)=0.037, P(cat|ingr)=0.135)
+    - spice_blend: 5 / 36  (P(ingr|cat)=0.139, P(cat|ingr)=0.135)
+    - biryani: 4 / 11  (P(ingr|cat)=0.364, P(cat|ingr)=0.108)
+    - poultry: 4 / 44  (P(ingr|cat)=0.091, P(cat|ingr)=0.108)
+    - vegetable: 4 / 199  (P(ingr|cat)=0.02, P(cat|ingr)=0.108)
+    - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.027)
+    - cohort: 1 / 45  (P(ingr|cat)=0.022, P(cat|ingr)=0.027)
+    - paneer: 1 / 26  (P(ingr|cat)=0.038, P(cat|ingr)=0.027)
+    - seafood: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.027)
 - Quantity (g): n=104 mean=0.72 median=0.08 range=0.02–4.2 total=75.04
 - Density used: 95.0 g/cup
 - Per-piece weight: 0.7 g
-- Avg servings when present: 5.86 (global avg 5.72)
-- Top co-occurring: 100× salt, 98× cinnamon, 96× cumin seeds, 90× cloves, 89× bay leaf, 84× vegetable oil, 84× coriander seeds, 80× onion, 78× black pepper, 72× cayenne
-- Versatility: 4.71  |  Role(s): tempering  |  Heat-sensitivity: 0.2
+- Avg servings when present: 5.85 (global avg 5.72)
+- Top co-occurring: 101× salt, 98× cinnamon, 96× cumin seeds, 90× cloves, 89× bay leaf, 85× vegetable oil, 84× coriander seeds, 80× onion, 78× black pepper, 72× cayenne
+- Versatility: 4.718  |  Role(s): tempering  |  Heat-sensitivity: 0.2
 
 ### cardamom, green
 - Frequency: **51** direct / **103** including sub-recipe expansion (7.82% / 15.8% of 652 main recipes)
@@ -628,36 +621,25 @@ Category totals:
 - Top co-occurring: 26× salt, 21× vegetable oil, 18× turmeric, 17× cumin seeds, 16× cilantro, 14× onion, 14× cayenne, 13× coriander seeds, 12× potato, 12× garlic
 - Versatility: 1.798  |  Role(s): unclassified  |  Heat-sensitivity: None
 
-### cashew nuts, ground
-- Frequency: **4** direct / **4** including sub-recipe expansion (0.61% / 0.61% of 652 main recipes)
-- Appears in 3 categories
-- Category usage (direct):
-    - vegetable: 2 / 199  (P(ingr|cat)=0.01, P(cat|ingr)=0.5)
-    - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.25)
-    - seafood: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.25)
-- Quantity (g): n=3 mean=62.5 median=75.0 range=37.5–75.0 total=187.5
-- Avg servings when present: 5.5 (global avg 5.72)
-- Top co-occurring: 4× vegetable oil, 4× salt, 4× cumin seeds, 4× coriander seeds, 3× tomato, 3× cilantro, 3× cayenne, 2× mustard seeds, 2× cloves, 2× cinnamon
-- Versatility: 0.439  |  Role(s): unclassified  |  Heat-sensitivity: None
-
 ### cashews
-- Frequency: **32** direct / **33** including sub-recipe expansion (4.91% / 5.06% of 652 main recipes)
-- Appears in 9 categories
+- Frequency: **36** direct / **37** including sub-recipe expansion (5.52% / 5.67% of 652 main recipes)
+- Appears in 10 categories
 - Category usage (direct):
-    - vegetable: 9 / 199  (P(ingr|cat)=0.045, P(cat|ingr)=0.281)
-    - meat: 6 / 59  (P(ingr|cat)=0.102, P(cat|ingr)=0.188)
-    - contemporary: 4 / 33  (P(ingr|cat)=0.121, P(cat|ingr)=0.125)
-    - cohort: 3 / 45  (P(ingr|cat)=0.067, P(cat|ingr)=0.094)
-    - legume: 3 / 135  (P(ingr|cat)=0.022, P(cat|ingr)=0.094)
-    - biryani: 2 / 11  (P(ingr|cat)=0.182, P(cat|ingr)=0.062)
-    - paneer: 2 / 26  (P(ingr|cat)=0.077, P(cat|ingr)=0.062)
-    - poultry: 2 / 44  (P(ingr|cat)=0.045, P(cat|ingr)=0.062)
-    - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.031)
-- Quantity (g): n=33 mean=47.77 median=32.5 range=16.25–260.0 total=1576.25
+    - vegetable: 11 / 199  (P(ingr|cat)=0.055, P(cat|ingr)=0.306)
+    - meat: 6 / 59  (P(ingr|cat)=0.102, P(cat|ingr)=0.167)
+    - contemporary: 4 / 33  (P(ingr|cat)=0.121, P(cat|ingr)=0.111)
+    - cohort: 3 / 45  (P(ingr|cat)=0.067, P(cat|ingr)=0.083)
+    - legume: 3 / 135  (P(ingr|cat)=0.022, P(cat|ingr)=0.083)
+    - appetizer: 2 / 52  (P(ingr|cat)=0.038, P(cat|ingr)=0.056)
+    - biryani: 2 / 11  (P(ingr|cat)=0.182, P(cat|ingr)=0.056)
+    - paneer: 2 / 26  (P(ingr|cat)=0.077, P(cat|ingr)=0.056)
+    - poultry: 2 / 44  (P(ingr|cat)=0.045, P(cat|ingr)=0.056)
+    - seafood: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.028)
+- Quantity (g): n=36 mean=48.3 median=32.5 range=16.25–260.0 total=1738.75
 - Density used: 130.0 g/cup
-- Avg servings when present: 6.33 (global avg 5.72)
-- Top co-occurring: 33× salt, 27× vegetable oil, 23× onion, 22× cayenne, 21× cumin seeds, 21× cilantro, 19× turmeric, 17× garlic, 17× cinnamon, 16× coriander seeds
-- Versatility: 2.885  |  Role(s): unclassified  |  Heat-sensitivity: None
+- Avg servings when present: 6.24 (global avg 5.72)
+- Top co-occurring: 37× salt, 31× vegetable oil, 25× cumin seeds, 25× cayenne, 24× onion, 24× cilantro, 20× turmeric, 20× coriander seeds, 19× cinnamon, 18× garlic
+- Versatility: 3.307  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### catfish
 - Frequency: **5** direct / **5** including sub-recipe expansion (0.77% / 0.77% of 652 main recipes)
@@ -776,7 +758,7 @@ Category totals:
 - Category usage (direct):
     - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=1.0)
 - Avg servings when present: 6.0 (global avg 5.72)
-- Top co-occurring: 1× white hamburger-style buns, 1× vegetable oil, 1× turmeric, 1× tamarind, 1× sweet-tart tamarind-date sauce, 1× sugar, 1× star anise, 1× seeds from 1 small to medium-size ripe pomegranate, 1× salt, 1× potato
+- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tamarind, 1× sweet-tart tamarind-date sauce, 1× sugar, 1× star anise, 1× seeds from 1 small to medium-size ripe pomegranate, 1× salt, 1× potato, 1× peanuts
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### chickpeas
@@ -1169,16 +1151,6 @@ Category totals:
 - Top co-occurring: 190× salt, 162× vegetable oil, 141× mustard seeds, 117× turmeric, 110× cayenne, 109× cilantro, 101× cumin seeds, 93× dried red chile, 87× coriander seeds, 61× fenugreek seeds
 - Versatility: 5.283  |  Role(s): tempering  |  Heat-sensitivity: 0.4
 
-### cut-up yard-long beans
-- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - vegetable: 2 / 199  (P(ingr|cat)=0.01, P(cat|ingr)=1.0)
-- Quantity (g): n=2 mean=318.75 median=318.75 range=37.5–600.0 total=637.5
-- Avg servings when present: 7.0 (global avg 5.72)
-- Top co-occurring: 2× turmeric, 2× salt, 2× onion, 2× ginger, 2× garlic, 2× cayenne, 1× whole-milk cheese, 1× warming spice blend, 1× vegetable oil, 1× tomato
-- Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
-
 ### dates
 - Frequency: **2** direct / **9** including sub-recipe expansion (0.31% / 1.38% of 652 main recipes)
 - Appears in 2 categories
@@ -1201,7 +1173,7 @@ Category totals:
 - Quantity (g): n=6 mean=3.06 median=2.25 range=0.19–9.0 total=18.38
 - Density used: 9.0 g/cup
 - Avg servings when present: 6.0 (global avg 5.72)
-- Top co-occurring: 6× salt, 5× vegetable oil, 4× garlic, 4× cumin seeds, 3× tomato, 3× ground ginger, 3× fennel seeds, 3× cloves, 3× cinnamon, 3× cayenne
+- Top co-occurring: 6× salt, 5× vegetable oil, 4× garlic, 4× cumin seeds, 4× cardamom, black, 3× tomato, 3× ground ginger, 3× fennel seeds, 3× cloves, 3× cinnamon
 - Versatility: 0.708  |  Role(s): finishing  |  Heat-sensitivity: 0.9
 
 ### dried fruit berries
@@ -1492,7 +1464,7 @@ Category totals:
     - cohort: 1 / 45  (P(ingr|cat)=0.022, P(cat|ingr)=1.0)
 - Quantity (g): n=1 mean=295.62 median=295.62 range=295.62–295.62 total=295.62
 - Avg servings when present: 12.0 (global avg 5.72)
-- Top co-occurring: 1× whole-milk cheese, 1× water, 1× vegetable oil, 1× sugar, 1× salt, 1× mango, 1× ground cardamom, 1× eggs, 1× butter
+- Top co-occurring: 1× whole-milk cheese, 1× water, 1× vegetable oil, 1× sugar, 1× salt, 1× pistachios, 1× mango, 1× ground cardamom, 1× eggs, 1× butter
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### fried onion paste *(sub-recipe)*
@@ -1510,15 +1482,6 @@ Category totals:
 - Avg servings when present: 5.78 (global avg 5.72)
 - Top co-occurring: 14× vegetable oil, 14× onion, 13× tomato, 13× salt, 12× cumin seeds, 11× garlic, 11× coriander seeds, 10× ginger, 10× cilantro, 9× turmeric
 - Versatility: 1.723  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### frozen puff pastry, completely thawed
-- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - biryani: 2 / 11  (P(ingr|cat)=0.182, P(cat|ingr)=1.0)
-- Avg servings when present: 6.0 (global avg 5.72)
-- Top co-occurring: 2× vegetable oil, 2× tomato, 2× simmered tomato sauce with chiles and cardamom, 2× salt, 2× saffron, 2× red chile powder, 2× onion, 2× ghee, 2× fried onion paste, 2× cumin seeds
-- Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### frozen whole pomfrets
 - Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
@@ -1797,7 +1760,7 @@ Category totals:
 - Quantity (g): n=42 mean=0.84 median=0.23 range=0.05–7.92 total=35.3
 - Density used: 95.0 g/cup
 - Avg servings when present: 5.72 (global avg 5.72)
-- Top co-occurring: 32× salt, 28× vegetable oil, 28× cloves, 27× black cumin, 26× ground mace, 26× black pepper, 24× fennel seeds, 23× nutmeg, 22× red chile powder, 22× cardamom, black
+- Top co-occurring: 32× salt, 28× vegetable oil, 28× cloves, 27× black cumin, 26× ground mace, 26× black pepper, 24× fennel seeds, 23× nutmeg, 23× cardamom, black, 22× red chile powder
 - Versatility: 3.283  |  Role(s): ground_spice  |  Heat-sensitivity: None
 
 ### ground mace
@@ -1914,16 +1877,6 @@ Category totals:
 - Avg servings when present: 6.0 (global avg 5.72)
 - Top co-occurring: 2× vegetable oil, 2× tomato, 2× salt, 2× lemongrass, 2× garlic, 2× cayenne, 1× scallions, 1× onion, 1× half-and-half, 1× garlic paste
 - Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: 0.5
-
-### kanak or wheat berries
-- Frequency: **1** direct / **7** including sub-recipe expansion (0.15% / 1.07% of 652 main recipes)
-- Appears in 6 categories
-- Category usage (direct):
-    - spice_blend: 1 / 36  (P(ingr|cat)=0.028, P(cat|ingr)=1.0)
-- Quantity (g): n=7 mean=3.01 median=0.39 range=0.39–18.75 total=21.09
-- Avg servings when present: 4.67 (global avg 5.72)
-- Top co-occurring: 7× turmeric, 7× star anise, 7× sesame seeds, 7× rice, 7× red chile powder, 7× poppy seeds, 7× nutmeg, 7× mustard seeds, 7× ground mace, 7× fenugreek seeds
-- Versatility: 1.134  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### kohlrabi
 - Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
@@ -2425,6 +2378,19 @@ Category totals:
 - Top co-occurring: 291× salt, 233× vegetable oil, 221× cumin seeds, 216× cilantro, 200× cayenne, 184× turmeric, 171× coriander seeds, 166× garlic, 148× ginger, 137× tomato
 - Versatility: 5.714  |  Role(s): base_aromatic  |  Heat-sensitivity: 0.1
 
+### papads
+- Frequency: **3** direct / **3** including sub-recipe expansion (0.46% / 0.46% of 652 main recipes)
+- Appears in 3 categories
+- Category usage (direct):
+    - cohort: 1 / 45  (P(ingr|cat)=0.022, P(cat|ingr)=0.333)
+    - legume: 1 / 135  (P(ingr|cat)=0.007, P(cat|ingr)=0.333)
+    - vegetable: 1 / 199  (P(ingr|cat)=0.005, P(cat|ingr)=0.333)
+- Quantity (g): n=3 mean=20.0 median=15.0 range=15.0–30.0 total=60.0
+- Per-piece weight: 5.0 g
+- Avg servings when present: 4.0 (global avg 5.72)
+- Top co-occurring: 2× salt, 2× mustard seeds, 2× cumin seeds, 2× coriander seeds, 2× cayenne, 1× yogurt, 1× vegetable oil, 1× turmeric, 1× spinach, 1× paprika
+- Versatility: 0.378  |  Role(s): unclassified  |  Heat-sensitivity: None
+
 ### paprika
 - Frequency: **5** direct / **5** including sub-recipe expansion (0.77% / 0.77% of 652 main recipes)
 - Appears in 4 categories
@@ -2515,8 +2481,21 @@ Category totals:
 - Category usage (direct):
     - contemporary: 1 / 33  (P(ingr|cat)=0.03, P(cat|ingr)=1.0)
 - Avg servings when present: 8.0 (global avg 5.72)
-- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tomato, 1× toasted cumin-coriander blend, 1× shelled pistachio nuts, 1× salt, 1× ribs celery, 1× red kidney beans, 1× red chile powder, 1× pine nuts
+- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tomato, 1× toasted cumin-coriander blend, 1× salt, 1× ribs celery, 1× red kidney beans, 1× red chile powder, 1× pistachios, 1× pine nuts
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
+
+### pistachios
+- Frequency: **4** direct / **4** including sub-recipe expansion (0.61% / 0.61% of 652 main recipes)
+- Appears in 3 categories
+- Category usage (direct):
+    - contemporary: 2 / 33  (P(ingr|cat)=0.061, P(cat|ingr)=0.5)
+    - cohort: 1 / 45  (P(ingr|cat)=0.022, P(cat|ingr)=0.25)
+    - meat: 1 / 59  (P(ingr|cat)=0.017, P(cat|ingr)=0.25)
+- Quantity (g): n=4 mean=93.75 median=46.88 range=31.25–250.0 total=375.0
+- Density used: 125.0 g/cup
+- Avg servings when present: 7.5 (global avg 5.72)
+- Top co-occurring: 4× salt, 3× vegetable oil, 3× red chile powder, 3× onion, 3× garlic, 3× cilantro, 3× cashews, 2× turmeric, 2× tomato, 2× nutmeg
+- Versatility: 0.439  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### plain dried breadcrumbs
 - Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
@@ -2612,6 +2591,15 @@ Category totals:
 - Avg servings when present: 6.29 (global avg 5.72)
 - Top co-occurring: 107× salt, 97× vegetable oil, 85× cilantro, 75× cayenne, 74× cumin seeds, 66× turmeric, 59× onion, 46× coriander seeds, 45× garlic, 43× tomato
 - Versatility: 4.281  |  Role(s): unclassified  |  Heat-sensitivity: None
+
+### puff pastry
+- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
+- Appears in 1 categories
+- Category usage (direct):
+    - biryani: 2 / 11  (P(ingr|cat)=0.182, P(cat|ingr)=1.0)
+- Avg servings when present: 6.0 (global avg 5.72)
+- Top co-occurring: 2× vegetable oil, 2× tomato, 2× simmered tomato sauce with chiles and cardamom, 2× salt, 2× saffron, 2× red chile powder, 2× onion, 2× ghee, 2× fried onion paste, 2× cumin seeds
+- Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### pumpkin
 - Frequency: **5** direct / **6** including sub-recipe expansion (0.77% / 0.92% of 652 main recipes)
@@ -2770,7 +2758,7 @@ Category totals:
 - Category usage (direct):
     - contemporary: 1 / 33  (P(ingr|cat)=0.03, P(cat|ingr)=1.0)
 - Avg servings when present: 8.0 (global avg 5.72)
-- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tomato, 1× toasted cumin-coriander blend, 1× shelled pistachio nuts, 1× salt, 1× red kidney beans, 1× red chile powder, 1× pinto beans, 1× pine nuts
+- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tomato, 1× toasted cumin-coriander blend, 1× salt, 1× red kidney beans, 1× red chile powder, 1× pistachios, 1× pinto beans, 1× pine nuts
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### rice
@@ -2939,9 +2927,9 @@ Category totals:
     - paneer: 24 / 26  (P(ingr|cat)=0.923, P(cat|ingr)=0.038)
     - biryani: 11 / 11  (P(ingr|cat)=1.0, P(cat|ingr)=0.017)
     - spice_blend: 4 / 36  (P(ingr|cat)=0.111, P(cat|ingr)=0.006)
-- Quantity (g): n=737 mean=8.75 median=9.12 range=0.51–584.0 total=6447.57
+- Quantity (g): n=736 mean=7.97 median=9.12 range=0.51–18.25 total=5863.57
 - Density used: 292.0 g/cup
-- Avg servings when present: 5.82 (global avg 5.72)
+- Avg servings when present: 5.81 (global avg 5.72)
 - Top co-occurring: 499× vegetable oil, 409× cilantro, 408× cayenne, 403× cumin seeds, 374× turmeric, 291× onion, 291× coriander seeds, 270× garlic, 255× mustard seeds, 231× ginger
 - Versatility: 6.463  |  Role(s): ground_spice  |  Heat-sensitivity: 0.4
 
@@ -2991,18 +2979,8 @@ Category totals:
 - Category usage (direct):
     - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=1.0)
 - Avg servings when present: 6.0 (global avg 5.72)
-- Top co-occurring: 1× white hamburger-style buns, 1× vegetable oil, 1× turmeric, 1× tamarind, 1× sweet-tart tamarind-date sauce, 1× sugar, 1× star anise, 1× salt, 1× potato, 1× peanuts
+- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× tamarind, 1× sweet-tart tamarind-date sauce, 1× sugar, 1× star anise, 1× salt, 1× potato, 1× peanuts, 1× onion
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### seeds from 2 black cardamom pods, ground
-- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
-- Appears in 2 categories
-- Category usage (direct):
-    - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=0.5)
-    - meat: 1 / 59  (P(ingr|cat)=0.017, P(cat|ingr)=0.5)
-- Avg servings when present: 5.0 (global avg 5.72)
-- Top co-occurring: 2× vegetable oil, 2× salt, 2× ground ginger, 2× garlic, 2× fennel seeds, 2× black cumin, 1× yogurt, 1× untoasted and toasted spice blend, 1× tomato, 1× red chile powder
-- Versatility: 0.2  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### semolina
 - Frequency: **4** direct / **4** including sub-recipe expansion (0.61% / 0.61% of 652 main recipes)
@@ -3063,26 +3041,6 @@ Category totals:
 - Avg servings when present: 4.77 (global avg 5.72)
 - Top co-occurring: 16× vegetable oil, 15× salt, 13× curry leaves, 12× turmeric, 10× mustard seeds, 10× dried red chile, 9× cayenne, 7× tamarind, 7× ginger, 7× garlic
 - Versatility: 1.545  |  Role(s): base_aromatic  |  Heat-sensitivity: None
-
-### shelled pistachio nuts
-- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - contemporary: 2 / 33  (P(ingr|cat)=0.061, P(cat|ingr)=1.0)
-- Quantity (g): n=2 mean=56.25 median=56.25 range=37.5–75.0 total=112.5
-- Avg servings when present: 7.0 (global avg 5.72)
-- Top co-occurring: 2× vegetable oil, 2× turmeric, 2× tomato, 2× salt, 2× red chile powder, 2× onion, 2× garlic, 2× cumin seeds, 2× coriander seeds, 2× cilantro
-- Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### shelled raw pistachio nuts
-- Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - meat: 1 / 59  (P(ingr|cat)=0.017, P(cat|ingr)=1.0)
-- Quantity (g): n=1 mean=37.5 median=37.5 range=37.5–37.5 total=37.5
-- Avg servings when present: 4.0 (global avg 5.72)
-- Top co-occurring: 1× salt, 1× red chile powder, 1× onion, 1× nutmeg, 1× mint, 1× lamb, 1× half-and-half, 1× ground mace, 1× ground ginger, 1× ground cinnamon
-- Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### shrimp
 - Frequency: **29** direct / **29** including sub-recipe expansion (4.45% / 4.45% of 652 main recipes)
@@ -3365,7 +3323,7 @@ Category totals:
     - vegetable: 1 / 199  (P(ingr|cat)=0.005, P(cat|ingr)=0.167)
 - Quantity (g): n=6 mean=6.25 median=6.25 range=6.25–6.25 total=37.5
 - Avg servings when present: 4.67 (global avg 5.72)
-- Top co-occurring: 6× vegetable oil, 6× turmeric, 6× star anise, 6× sesame seeds, 6× salt, 6× rice, 6× red chile powder, 6× poppy seeds, 6× nutmeg, 6× mustard seeds
+- Top co-occurring: 6× wheat berries, 6× vegetable oil, 6× turmeric, 6× star anise, 6× sesame seeds, 6× salt, 6× rice, 6× red chile powder, 6× poppy seeds, 6× nutmeg
 - Versatility: 0.885  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### tomato
@@ -3461,23 +3419,6 @@ Category totals:
 - Avg servings when present: 6.0 (global avg 5.72)
 - Top co-occurring: 5× vegetable oil, 5× salt, 4× garlic, 4× dried red chile, 3× onion, 3× ginger, 3× cumin seeds, 3× coriander seeds, 3× cilantro, 2× turmeric
 - Versatility: 0.489  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### uncooked lentil wafers , at least 6 inches in diameter
-- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
-- Appears in 2 categories
-- Category usage (direct):
-    - legume: 1 / 135  (P(ingr|cat)=0.007, P(cat|ingr)=0.5)
-    - vegetable: 1 / 199  (P(ingr|cat)=0.005, P(cat|ingr)=0.5)
-- Avg servings when present: 4.0 (global avg 5.72)
-- Top co-occurring: 2× salt, 2× mustard seeds, 2× cumin seeds, 2× coriander seeds, 2× cayenne, 1× yogurt, 1× vegetable oil, 1× turmeric, 1× spinach, 1× paprika
-- Versatility: 0.2  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### uncooked lentil wafers , made from skinned split black lentil flour, at least 6 inches in diameter
-- Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - cohort: 1 / 45  (P(ingr|cat)=0.022, P(cat|ingr)=1.0)
-- Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### uncooked medium-size white tapioca pearls
 - Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
@@ -3587,7 +3528,7 @@ Category totals:
     - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=1.0)
 - Quantity (g): n=1 mean=9.38 median=9.38 range=9.38–9.38 total=9.38
 - Avg servings when present: 10.0 (global avg 5.72)
-- Top co-occurring: 1× white hamburger-style buns, 1× tomato, 1× salt, 1× potato, 1× onion, 1× nutmeg, 1× mango powder, 1× lime, 1× green peas, 1× ginger paste
+- Top co-occurring: 1× tomato, 1× salt, 1× potato, 1× onion, 1× nutmeg, 1× mango powder, 1× lime, 1× green peas, 1× ginger paste, 1× ginger
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### vinegar
@@ -3662,45 +3603,17 @@ Category totals:
 - Top co-occurring: 1× vegetable oil, 1× turmeric, 1× salt, 1× nigella seeds, 1× garlic, 1× dried red chile, 1× cumin seeds, 1× cilantro, 1× bishop's weed
 - Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
-### wheat
-- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
-- Appears in 2 categories
+### wheat berries
+- Frequency: **3** direct / **9** including sub-recipe expansion (0.46% / 1.38% of 652 main recipes)
+- Appears in 7 categories
 - Category usage (direct):
-    - biryani: 1 / 11  (P(ingr|cat)=0.091, P(cat|ingr)=0.5)
-    - meat: 1 / 59  (P(ingr|cat)=0.017, P(cat|ingr)=0.5)
-- Quantity (g): n=2 mean=112.5 median=112.5 range=75.0–150.0 total=225.0
-- Avg servings when present: 8.0 (global avg 5.72)
-- Top co-occurring: 2× ginger, 2× garlic, 2× cumin seeds, 2× cilantro, 2× cayenne, 2× black cumin, 2× beef, 1× vegetable oil, 1× untoasted and toasted spice blend, 1× turmeric
-- Versatility: 0.2  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### white bread
-- Frequency: **4** direct / **4** including sub-recipe expansion (0.61% / 0.61% of 652 main recipes)
-- Appears in 2 categories
-- Category usage (direct):
-    - appetizer: 3 / 52  (P(ingr|cat)=0.058, P(cat|ingr)=0.75)
-    - biryani: 1 / 11  (P(ingr|cat)=0.091, P(cat|ingr)=0.25)
-- Avg servings when present: 6.0 (global avg 5.72)
-- Top co-occurring: 4× vegetable oil, 4× salt, 4× onion, 4× cilantro, 4× cayenne, 3× tamarind, 3× sugar, 3× potato, 3× ginger, 3× cumin seeds
-- Versatility: 0.293  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### white finger-sandwich-style buns, about 3 inches in diameter
-- Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=1.0)
-- Avg servings when present: 4.0 (global avg 5.72)
-- Top co-occurring: 1× vegetable oil, 1× tomato, 1× scallions, 1× salt, 1× onion, 1× ginger, 1× garlic, 1× cumin seeds, 1× coriander-scented untoasted blend, 1× coriander seeds
-- Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### white hamburger-style buns
-- Frequency: **3** direct / **3** including sub-recipe expansion (0.46% / 0.46% of 652 main recipes)
-- Appears in 2 categories
-- Category usage (direct):
-    - appetizer: 2 / 52  (P(ingr|cat)=0.038, P(cat|ingr)=0.667)
-    - legume: 1 / 135  (P(ingr|cat)=0.007, P(cat|ingr)=0.333)
-- Avg servings when present: 8.0 (global avg 5.72)
-- Top co-occurring: 3× salt, 3× onion, 3× coriander seeds, 3× cilantro, 3× butter, 3× black pepper, 2× vegetable oil, 2× turmeric, 2× star anise, 2× potato
-- Versatility: 0.252  |  Role(s): unclassified  |  Heat-sensitivity: None
+    - biryani: 1 / 11  (P(ingr|cat)=0.091, P(cat|ingr)=0.333)
+    - meat: 1 / 59  (P(ingr|cat)=0.017, P(cat|ingr)=0.333)
+    - spice_blend: 1 / 36  (P(ingr|cat)=0.028, P(cat|ingr)=0.333)
+- Quantity (g): n=9 mean=27.34 median=0.39 range=0.39–150.0 total=246.09
+- Avg servings when present: 5.5 (global avg 5.72)
+- Top co-occurring: 9× cumin seeds, 8× turmeric, 8× rice, 8× nutmeg, 8× ground mace, 8× fennel seeds, 8× coriander seeds, 8× cloves, 8× cinnamon, 8× chana dal
+- Versatility: 1.465  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### white pumpkin
 - Frequency: **3** direct / **3** including sub-recipe expansion (0.46% / 0.46% of 652 main recipes)
@@ -3713,15 +3626,6 @@ Category totals:
 - Avg servings when present: 6.0 (global avg 5.72)
 - Top co-occurring: 3× salt, 3× curry leaves, 3× cayenne, 2× vegetable oil, 2× turmeric, 2× mustard seeds, 2× coconut milk, 2× cilantro, 1× ginger, 1× corn
 - Versatility: 0.252  |  Role(s): unclassified  |  Heat-sensitivity: None
-
-### white, finger sandwich-style buns
-- Frequency: **1** direct / **1** including sub-recipe expansion (0.15% / 0.15% of 652 main recipes)
-- Appears in 1 categories
-- Category usage (direct):
-    - appetizer: 1 / 52  (P(ingr|cat)=0.019, P(cat|ingr)=1.0)
-- Avg servings when present: 8.0 (global avg 5.72)
-- Top co-occurring: 1× vegetable oil, 1× turmeric, 1× sesame seeds, 1× salt, 1× rice flour, 1× potato, 1× peanuts, 1× green peas, 1× ginger, 1× garlic
-- Versatility: 0.063  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### whole milk solids *(sub-recipe)*
 - Frequency: **6** direct / **6** including sub-recipe expansion (0.92% / 0.92% of 652 main recipes)
@@ -3774,6 +3678,16 @@ Category totals:
 - Top co-occurring: 2× vegetable oil, 2× turmeric, 2× salt, 2× cayenne, 1× toasted chickpea flour, 1× sweet potato, 1× shallot, 1× pumpkin, 1× potato, 1× pine nuts
 - Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
 
+### yard-long beans
+- Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
+- Appears in 1 categories
+- Category usage (direct):
+    - vegetable: 2 / 199  (P(ingr|cat)=0.01, P(cat|ingr)=1.0)
+- Quantity (g): n=2 mean=318.75 median=318.75 range=37.5–600.0 total=637.5
+- Avg servings when present: 7.0 (global avg 5.72)
+- Top co-occurring: 2× turmeric, 2× salt, 2× onion, 2× ginger, 2× garlic, 2× cayenne, 1× whole-milk cheese, 1× warming spice blend, 1× vegetable oil, 1× tomato
+- Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
+
 ### yellow peas, whole
 - Frequency: **2** direct / **2** including sub-recipe expansion (0.31% / 0.31% of 652 main recipes)
 - Appears in 1 categories
@@ -3781,7 +3695,7 @@ Category totals:
     - legume: 2 / 135  (P(ingr|cat)=0.015, P(cat|ingr)=1.0)
 - Quantity (g): n=2 mean=190.0 median=190.0 range=190.0–190.0 total=380.0
 - Density used: 190.0 g/cup
-- Top co-occurring: 2× vegetable oil, 2× salt, 2× onion, 2× cumin seeds, 2× coriander seeds, 2× cilantro, 1× white hamburger-style buns, 1× turmeric, 1× sugar, 1× star anise
+- Top co-occurring: 2× vegetable oil, 2× salt, 2× onion, 2× cumin seeds, 2× coriander seeds, 2× cilantro, 1× turmeric, 1× sugar, 1× star anise, 1× roasted spices with chiles and star anise
 - Versatility: 0.1  |  Role(s): unclassified  |  Heat-sensitivity: None
 
 ### yogurt
@@ -3823,7 +3737,7 @@ Category totals:
 - biryani: mean 10.18 spices/recipe (11 recipes with ≥1 spice)
 - paneer: mean 7.62 spices/recipe (24 recipes with ≥1 spice)
 - poultry: mean 7.32 spices/recipe (44 recipes with ≥1 spice)
-- meat: mean 7.19 spices/recipe (59 recipes with ≥1 spice)
+- meat: mean 7.2 spices/recipe (59 recipes with ≥1 spice)
 - contemporary: mean 6.97 spices/recipe (33 recipes with ≥1 spice)
 - appetizer: mean 6.85 spices/recipe (52 recipes with ≥1 spice)
 - legume: mean 6.4 spices/recipe (135 recipes with ≥1 spice)
