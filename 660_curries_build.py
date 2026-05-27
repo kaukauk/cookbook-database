@@ -124,7 +124,7 @@ DENSITY_G_PER_CUP = {
     'ground cardamom':100,'ground mustard':85,'ground fennel':95,'ground fenugreek':110,
     'ground ginger':95,
     'asafetida':150,'mango powder':115,'dried pomegranate seeds':110,
-    'garam masala':95,'sambhar masala':95,
+    'garam masala':95,'sambhar masala':95,'kokum':80,
     # --- salt / sugar / leavening ---
     'salt':292,'black salt':300,'sugar':200,'jaggery':210,'palm sugar':210,
     'baking powder':230,
@@ -253,10 +253,10 @@ def grams_for(canonical, amount, unit_phrase, line_text):
 # Ingredient name cleanup + synonyms (carried over, lightly expanded)
 # =================================================================
 STOPWORDS = set('''a an the of and or to with for in on at by from as into
-fresh dry dried freshly finely thinly coarsely roughly lightly
-chopped sliced diced minced grated crushed cracked split halved quartered
+freshly finely thinly coarsely roughly lightly
+chopped sliced diced minced grated crushed cracked halved quartered
 peeled cored seeded stemmed trimmed pitted shredded julienned cubed
-small medium large extra big tiny mini whole half halves quarters
+extra big tiny mini half halves quarters
 hot warm cold room temperature
 raw cooked toasted roasted boiled steamed fried
 plus more about approximately roughly
@@ -264,11 +264,17 @@ preferably optional optionally divided
 length-wise lengthwise crosswise crisscross
 into pieces strips slices rounds wedges chunks
 inch inches long thin thick wide cm centimeter centimeters
-softened melted softened soft firm hard
+softened melted soft firm hard
 free-range organic natural ripe unripe young old mature
-red green yellow orange white black brown purple pink
 your favorite store-bought home-made homemade
 '''.split())
+# NOTE: words intentionally NOT in STOPWORDS — they're descriptors that
+# canonicalize handles via its leading-strip regex, AND removing them here
+# preserves alias matches like "red lentils" → masoor dal:
+#   - colors: red, green, yellow, black, white, brown, orange, purple, pink
+#   - freshness: fresh, dry, dried, whole
+#   - sizes: small, medium, large (these are also count units)
+#   - preps: split (it's part of "split mung beans" etc.)
 
 SYNONYMS = {
     'asafetida': ['hing','asafoetida'],
@@ -279,9 +285,9 @@ SYNONYMS = {
     'ground coriander':['coriander powder','coriander, ground'],
     'cilantro':['fresh coriander','coriander leaves','taaza dhania','dhania','cilantro leaves','coriander leaf'],
     'turmeric':['ground turmeric','turmeric powder','haldi','manjal','ground tumeric','tumeric'],
-    'cardamom, green':['green cardamom','cardamom pods','green cardamom pods','elaichi','cardamom seeds','cardamom seed','whole green cardamom','whole cardamom pods','cardamom'],
-    'ground cardamom':['cardamom powder','ground green cardamom','ground cardamom seeds','powdered cardamom'],
-    'cardamom, black':['black cardamom','black cardamom pods','badi elaichi','whole black cardamom'],
+    'cardamom, green':['green cardamom','cardamom pods','green cardamom pods','elaichi','cardamom seeds','cardamom seed','whole green cardamom','whole cardamom pods','cardamom','cardamom seeds from green or white pods','cardamom seeds from green pods'],
+    'ground cardamom':['cardamom powder','ground green cardamom','ground cardamom seeds','powdered cardamom','cardamom seeds from green or white pods, ground','cardamom seeds, ground','cardamom seeds ground'],
+    'cardamom, black':['black cardamom','black cardamom pods','badi elaichi','whole black cardamom','cardamom seeds from black pods','cardamom seeds from black pods, ground','cardamom from black pods'],
     'cinnamon':['cinnamon stick','cinnamon sticks','dalchini','cassia','whole cinnamon'],
     'ground cinnamon':['cinnamon powder','cinnamon, ground','powdered cinnamon','ground cassia'],
     'cloves':['clove','lavang','whole cloves'],
@@ -291,11 +297,11 @@ SYNONYMS = {
     'ground mustard':['mustard powder','dry mustard','ground mustard seeds','dried mustard'],
     'fenugreek seeds':['fenugreek seed','methi seeds','methi','whole fenugreek','whole fenugreek seeds'],
     'ground fenugreek':['fenugreek powder','ground fenugreek seeds','ground methi','methi powder'],
-    'fenugreek leaves':['fresh fenugreek','dried fenugreek','kasuri methi','dried fenugreek leaves','methi leaves'],
+    'fenugreek leaves':['fresh fenugreek','dried fenugreek','kasuri methi','dried fenugreek leaves','methi leaves','fenugreek'],
     'fennel seeds':['fennel seed','saunf','whole fennel seeds','whole fennel'],
     'ground fennel':['fennel powder','ground fennel seeds','powdered fennel'],
     'nigella seeds':['nigella','kalonji','nigella seed','onion seeds'],
-    "bishop's weed":['ajwain','ajowan','carom seeds','ajwan','carom'],
+    "bishop's weed":['ajwain','ajowan','carom seeds','ajwan','carom','bishop’s weed'],
     'black pepper':['black peppercorns','peppercorns','kali mirchi','whole black peppercorns','whole peppercorns','pepper'],
     'ground black pepper':['black pepper, ground','freshly ground black pepper','freshly ground pepper','pepper, ground','ground pepper','ground peppercorns'],
     'cayenne':['cayenne pepper','ground cayenne','cayenne (ground red pepper)'],
@@ -342,7 +348,9 @@ SYNONYMS = {
     'spinach':['fresh spinach','baby spinach','spinach leaves','palak','keerai'],
     'eggplant':['eggplants','baby eggplant','baingan','japanese eggplant','asian eggplant','aubergine'],
     'okra':['okra pods','bhindi','vendakkai',"lady's fingers"],
-    'green peas':['peas','frozen peas','fresh peas','mutter','matar','green peas, frozen'],
+    'green peas':['frozen peas','fresh peas','mutter','matar','green peas, frozen','sweet peas','english peas','garden peas'],
+    # NOTE: bare 'peas' is intentionally NOT an alias — it falsely matches
+    # "pigeon peas", "yellow peas", "split peas" via tail matching.
     'green beans':['string beans','french beans','farasvi'],
     'carrot':['carrots','gajar'],
     'bell pepper':['bell peppers','red bell pepper','green bell pepper','yellow bell pepper','simla mirch','capsicum'],
@@ -384,24 +392,31 @@ SYNONYMS = {
     'apricots':['apricot','dried apricots','jardaloo'],
     'guava':['guavas'],
     'watermelon':['tarbooz'],
+    'avocado':['hass avocado','hass avocados','avocados','firm hass avocado'],
+    'arugula':['rocket'],
+    'bamboo shoots':['bamboo shoot','canned bamboo shoots'],
+    'bean sprouts':['mung bean sprouts','sprouted beans','store-bought bean sprouts'],
+    'chives':['fresh chives'],
+    'jackfruit':['raw jackfruit','canned raw jackfruit','green jackfruit','unripe jackfruit'],
+    'flat beans':['flat green beans','italian flat beans'],
     'chickpeas':['garbanzo beans','kabuli chana','canned chickpeas','dried chickpeas','white chickpeas'],
     'black chickpeas':['kala chana','desi chana'],
     'green chickpeas':['hara chana'],
     'chickpea flour':['besan','gram flour','garbanzo flour'],
     'red kidney beans':['kidney beans','rajmah','rajma'],
     'black-eyed peas':['lobhia','black-eyed pea','chowli','cowpeas','red cowpeas','sabud chowli'],
-    'mung beans, whole':['mung beans','whole mung','sabud moong','green gram','moong'],
-    'split mung beans, skinned':['moong dal','yellow split mung','skinned split mung','dhuli moong'],
-    'urad dal, skinned split':['urad dal','split black gram','skinned split black lentils','dhuli urad','skinned split black lentils, picked over for stones'],
-    'urad dal, whole':['whole urad','sabud urad','black gram, whole','whole black gram'],
-    'chana dal':['yellow split peas','split bengal gram','chana daal','split yellow peas'],
-    'masoor dal, split':['red lentils','masoor dal','split red lentils','skinned masoor'],
+    'mung beans, whole':['mung beans','whole mung','sabud moong','green gram','moong','whole green lentils','green lentils, whole'],
+    'split mung beans, skinned':['moong dal','yellow split mung','skinned split mung','dhuli moong','skinned split green lentils','split green lentils','green lentils, split'],
+    'urad dal, skinned split':['urad dal','split black gram','skinned split black lentils','dhuli urad','skinned split black lentils, picked over for stones','split black lentils'],
+    'urad dal, whole':['whole urad','sabud urad','black gram, whole','whole black gram','whole black lentils'],
+    'chana dal':['yellow split peas','split bengal gram','chana daal','split yellow peas','split yellow chickpeas','bengal gram, split','split bengal gram lentils'],
+    'yellow peas, whole':['safed vatana','dried yellow peas','whole yellow peas'],
+    'masoor dal, split':['red lentils','masoor dal','split red lentils','skinned masoor','skinned split brown lentils','split brown lentils','brown lentils, split','salmon-colored brown lentils'],
     'masoor, whole':['whole brown lentils','sabud masoor','brown lentils'],
-    'toovar dal':['toor dal','arhar dal','pigeon peas, split','split pigeon peas','tuvar dal'],
-    'toovar, whole':['whole pigeon peas','sabud toovar','sabud toor'],
+    'toovar dal':['toor dal','arhar dal','pigeon peas, split','split pigeon peas','tuvar dal','yellow pigeon peas','split yellow pigeon peas','skinned split yellow pigeon peas','oily skinned split yellow pigeon peas','unoily skinned split yellow pigeon peas'],
+    'toovar, whole':['whole pigeon peas','sabud toovar','sabud toor','whole yellow pigeon peas'],
     'moth beans':['matki','moth','dew gram'],
     'horse gram':['kulith','kollu'],
-    'yellow peas, whole':['safed vatana','dried yellow peas'],
     'cashews':['cashew','cashew nuts','caju','raw cashews'],
     'almonds':['almond','blanched almonds','slivered almonds','almond, blanched'],
     'pistachios':['pistachio','shelled pistachios'],
@@ -422,7 +437,7 @@ SYNONYMS = {
     'paneer':['indian cheese','fresh cheese','paneer cheese','homemade paneer'],
     'khoya':['mawa','milk solids'],
     'whole-milk cheese':['cheese'],
-    'vegetable oil':['canola oil','sunflower oil','safflower oil','corn oil','neutral oil','oil','peanut oil','vegetable cooking oil'],
+    'vegetable oil':['canola oil','sunflower oil','safflower oil','corn oil','neutral oil','oil','peanut oil','vegetable cooking oil','vegetable cooking spray','cooking spray'],
     'mustard oil':['kacchi ghani mustard oil'],
     'coconut oil':['virgin coconut oil'],
     'sesame oil':['gingelly oil','toasted sesame oil','til oil'],
@@ -447,7 +462,7 @@ SYNONYMS = {
     'beef':['beef chuck','ground beef','stew beef','beef stew meat','beef shoulder','beef sirloin','sirloin','flank steak','beef, cut into'],
     'pork':['pork shoulder','pork loin','pork tenderloin','pork butt','pork, cut into','pork stew meat'],
     'pork sausage':['italian sausage','sausage'],
-    'eggs':['egg','hard-boiled eggs','large eggs'],
+    'eggs':['egg','hard-boiled eggs','large eggs','egg yolks','egg whites','egg yolk','egg white'],
     'shrimp':['prawns','shrimps','large shrimp','medium shrimp','peeled shrimp','jhinga','chingri'],
     'lobster':['lobster tail','lobster tails','lobster meat'],
     'crab':['crab meat','crab claws','kekada'],
@@ -517,13 +532,24 @@ def extract_ingredient_name(line_text):
             if cand in {'fluid','fl'} and m2:
                 rest = rest[m2.end():].strip()
     rest = re.sub(r'^(of\s+|to\s+)+', '', rest)
+    # Strip leading meat/fish prep modifiers separated by commas
+    # e.g. "boneless, skin-on wild salmon fillet" → "wild salmon fillet"
+    rest = re.sub(r'^(?:(?:boneless|bone-in|skin-on|skin-removed|skinless|deboned)\s*,\s*)+', '', rest, flags=re.I)
+    # Strip leading "wild" / "raw" descriptors (not unit, not in unit detector)
+    rest = re.sub(r'^(?:wild|raw|live)\s+', '', rest, flags=re.I)
     rest_no_paren = re.sub(r'\([^)]*\)', '', rest).strip()
     # *** Fix #3: split on semicolons and on commas-with-preps.
     # DO NOT split on bare " or " — it drops the actual ingredient
     # (e.g. "coarse kosher or sea salt"). Substring fallback handles those.
     split_re = r'(?:;|,\s*(?:(?:finely|coarsely|roughly|thinly|lightly|freshly|partially|fully|very)\s+)?(?:chopped|sliced|diced|minced|grated|crushed|halved|quartered|peeled|cored|seeded|stemmed|trimmed|cubed|shredded|julienned|cut|broken|toasted|roasted|softened|melted|drained|rinsed|optional|divided|to taste|or more|or to taste|plus more|preferably|picked over|washed|soaked|skinned|deveined|deboned|boneless|skin-on|warmed|reconstituted|stems? removed|seeds? removed|tail-on|for [a-z\- ]+))'
     rest_clean = re.split(split_re, rest_no_paren, maxsplit=1)[0]
-    rest_clean = re.sub(r'\s+(to taste|as needed|or to taste|optional|divided|for garnish|for serving|for tempering|for frying|for deep-frying|for greasing).*$', '', rest_clean, flags=re.I)
+    # Trailing strip in three passes:
+    # 1) Phrases preceded by whitespace
+    rest_clean = re.sub(r'\s+(?:to taste|as needed|or to taste|optional|divided|for garnish|for serving|for tempering|for frying|for deep-frying|for pan-frying|for greasing|for dusting|for kneading|for brushing|for sprinkling|at room temperature|room temperature).*$', '', rest_clean, flags=re.I)
+    # 2) Comma clauses ("oil, plus extra for brushing", "amaranth, well rinsed, tough stems")
+    rest_clean = re.sub(r',\s*(?:plus (?:more|extra)|well rinsed|rinsed and drained|tough stems? discarded|tough ends? discarded|stem removed|stems? removed|seeds? removed|soaked\b|at room temperature|partially thawed|thawed).*$', '', rest_clean, flags=re.I)
+    # 3) Trailing "for X" (no-comma form)
+    rest_clean = re.sub(r'\s+for\s+(?:pan-frying|deep-frying|frying|tempering|garnish|garnishing|serving|brushing|kneading|dusting|sprinkling).*$', '', rest_clean, flags=re.I)
     tokens = rest_clean.split()
     while tokens and tokens[0].lower() in STOPWORDS:
         tokens.pop(0)
@@ -572,14 +598,47 @@ ANCHOR_IN_H3 = re.compile(r'<a\s+id="(rec\w+)"')
 HREF_RE = re.compile(r'<a\s+href="([^"]+)#(rec\w+)"', re.I)
 
 def parse_makes(text):
-    """Parse '1½ cups' or 'about 1 cup' or '½ cup paste' into (amount, unit)."""
+    """Parse '1½ cups' or 'about 1 cup' or 'a scant ½ cup' into (amount, unit)."""
     text = text.strip().lower()
-    text = re.sub(r'^about\s+', '', text)
+    # Strip natural-language qualifiers the book uses
+    text = re.sub(r'^(?:about|approximately|a scant|scant|almost|nearly|a generous|generous|a heaping|heaping|just under|just over)\s+', '', text)
+    text = re.sub(r'^a\s+(?=[\d¼½¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚])', '', text)  # bare "a" before a number
     a, idx = parse_amount(text)
     rest = text[idx:].strip()
     unit_match = re.match(r'^(cups?|tablespoons?|teaspoons?|tbsps?|tsps?|pints?|quarts?|ounces?|pounds?)\b', rest)
     unit = unit_match.group(1) if unit_match else ''
     return a, unit
+
+def preprocess_html(html):
+    """Normalize variant recipe-boundary markups into h3a/h3b form.
+
+    Two patterns are missed by the bare h3a/h3b regex:
+
+    1. <h3 class="h3d">[<a id="rec*"/>]STYLE</h3><h3 class="h3e|h3f">TITLE</h3>
+       — h3d is the style label, h3e/h3f holds the real title, and the
+       rec anchor (when present) belongs to this recipe. Used widely in
+       chapter 2 for spice-blend variants and elsewhere for regional
+       variants of fish/lentil/vegetable preparations.
+
+    2. <h3 class="h3bno">TITLE</h3>
+       — same as h3b but with suppressed top border, used for the first
+       recipe of a new <h2> section ("Beef" → first beef recipe).
+
+    Without this preprocessing, ~15 recipes go undetected and their
+    ingredient lists are silently merged into the preceding h3a/h3b
+    recipe, polluting its ingredients and breaking cross-references.
+    """
+    def promote(m):
+        anchor_part = m.group(1) or ''
+        style_text = m.group(2).strip()
+        title = m.group(3).strip()
+        return f'<h3 class="h3a">{anchor_part}{title}</h3>\n<h3 class="h3d">{style_text}</h3>'
+    html = re.sub(
+        r'<h3 class="h3d">((?:<a[^>]+/?>)*)([^<]*)</h3>\s*<h3 class="h3[ef]">([^<]+)</h3>',
+        promote, html
+    )
+    html = html.replace('<h3 class="h3bno">', '<h3 class="h3b">')
+    return html
 
 def parse_all_recipes():
     recipes = []
@@ -588,7 +647,8 @@ def parse_all_recipes():
         if base not in CHAPTER_CATEGORIES: continue
         cat, cat_label = CHAPTER_CATEGORIES[base]
         with open(path) as f:
-            content = f.read()
+            content = preprocess_html(f.read())
+        # (content is the already-preprocessed HTML from above)
         for m in RECIPE_RE.finditer(content):
             heading_html = m.group(2)
             body = m.group(3)
