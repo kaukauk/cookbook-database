@@ -58,6 +58,7 @@ ML_OF = {'teaspoon':5,'teaspoons':5,'tsp':5,'tsps':5,
          'tablespoon':15,'tablespoons':15,'tbsp':15,'tbsps':15,'tbs':15,
          'cup':240,'cups':240,
          'ml':1,'millilitre':1,'millilitres':1,'milliliter':1,'milliliters':1,
+         'cl':10,'centilitre':10,'centilitres':10,
          'l':1000,'litre':1000,'litres':1000,'liter':1000,'liters':1000,
          'pint':473,'pints':473,'quart':946,'quarts':946,
          'fluid':30, 'fl':30}
@@ -267,7 +268,7 @@ SYNONYMS = {
     'fennel seeds':['fennel seed','saunf','whole fennel seeds','whole fennel'],
     'ground fennel':['fennel powder','ground fennel seeds','powdered fennel'],
     'nigella seeds':['nigella','kalonji','nigella seed','onion seeds'],
-    "bishop's weed":['ajwain','ajowan','carom seeds','ajwan','carom','bishop’s weed','ajwain seeds'],
+    "bishop's weed":['ajwain','ajowan','carom seeds','ajwan','carom','bishop’s weed','ajwain seeds',"bishop's weed or dried thyme"],
     'black pepper':['black peppercorns','peppercorns','kali mirchi','whole black peppercorns','whole peppercorns','pepper'],
     'ground black pepper':['black pepper, ground','freshly ground black pepper','freshly ground pepper','pepper, ground','ground pepper','ground peppercorns','freshly cracked black pepper'],
     'cayenne':['cayenne pepper','ground cayenne','cayenne (ground red pepper)'],
@@ -301,8 +302,8 @@ SYNONYMS = {
     'onion':['onions','red onion','yellow onion','sliced onion','chopped onion','pyaaz','kaanda','vengayam','brown onion','white onion','spanish onion'],
     'shallot':['shallots','pearl onions','chinnay vengayam','banana shallots'],
     'scallions':['scallion','green onions','spring onion','spring onions'],
-    'green chile':['green chiles','fresh green chile','green chilies','hara mirch','serrano chile','serrano','jalapeno','jalapeño','thai chile','thai chiles','thai bird chile','green chilli','green chillies','bird chillies','birdseye chillies','finger chillies'],
-    'dried red chile':['dried red chiles','dried red chili','dried red chillies','red chile','red chiles','dried chiles','dried chile','lal mirch','byadagi','kashmiri chile','kashmiri chiles','dried red thai or cayenne chile','dried red thai or cayenne chiles','dried red thai chile','dried red thai chiles','whole dried red chillies','kashmiri dried red chillies','dried chilli flakes','dried red chilli flakes','red chilli flakes','chilli flakes','crushed red chillies','crushed red chilli'],
+    'green chile':['green chiles','fresh green chile','green chilies','hara mirch','serrano chile','serrano','jalapeno','jalapeño','thai chile','thai chiles','thai bird chile','green chilli','green chillies','bird chillies','birdseye chillies','finger chillies','red chilli','fresh red chilli','fresh red chillies','red chillies','green chillies, deseeded'],
+    'dried red chile':['dried red chiles','dried red chili','dried red chillies','red chile','red chiles','dried chiles','dried chile','lal mirch','byadagi','kashmiri chile','kashmiri chiles','dried red thai or cayenne chile','dried red thai or cayenne chiles','dried red thai chile','dried red thai chiles','whole dried red chillies','kashmiri dried red chillies','dried chilli flakes','dried red chilli flakes','red chilli flakes','chilli flakes','crushed red chillies','crushed red chilli','dried guajillo chiles','dried red kashmiri or guajillo chiles','guajillo chiles'],
     'mint':['fresh mint','mint leaves','pudhina','pudina','mint, fresh','mint sprigs'],
     'dill':['fresh dill','dill leaves','suva','dill weed'],
     'basil':['basil leaves','fresh basil'],
@@ -326,7 +327,7 @@ SYNONYMS = {
     'mushroom':['mushrooms','white mushrooms','button mushrooms','cremini','dhingri','chestnut mushrooms','portobello mushrooms','field mushrooms'],
     'bitter melon':['bitter gourd','karela'],
     'bottle gourd':['lauki','dudhi','opo squash','bottle gourd squash'],
-    'ridge gourd':['luffa','toori','peerkangai','ridged luffa','luffa squash'],
+    'ridge gourd':['luffa','toori','peerkangai','ridged luffa','luffa squash','ridged luffa squash'],
     'ivy gourd':['tindora','tindori','kovakkai'],
     'taro root':['arbi','colocasia','taro'],
     'taro leaves':['patra','colocasia leaves','arbi leaves'],
@@ -355,7 +356,21 @@ SYNONYMS = {
     'mango, ripe':['ripe mango','alphonso mango','alphonso mangoes'],
     'mango':['mangoes'],
     'pineapple':['fresh pineapple','anaras','anasi'],
-    'pomegranate seeds':['pomegranate arils','fresh pomegranate'],
+    'pomegranate seeds':['pomegranate arils','fresh pomegranate','seeds from 1 small to medium-size ripe pomegranate','seeds from 1 pomegranate','fresh pomegranate seeds','pomegranate seeds separated from the flesh','fresh pomegranate, seeds separated from the flesh'],
+    'sabudana':['tapioca pearls','sago','sago pearls','uncooked medium-size white tapioca pearls','white tapioca pearls'],
+    'raspberries':['raspberry','fresh raspberries','raspberry purée','raspberry puree','frozen raspberries','berries','mixed berries','dried fruit berries'],
+    'kale':['kale leaves','curly kale','cavolo nero'],
+    'cocoa powder':['cocoa','unsweetened cocoa powder','dusting of cocoa powder'],
+    'vanilla':['vanilla extract','pure vanilla extract','vanilla essence','vanilla bean','vanilla pod','vanilla seeds','vanilla pod or 2 tsp vanilla extract','vanilla pod or 3 tsp vanilla extract'],
+    'veal':['boneless veal','veal shoulder'],
+    'mangetout':['snow peas','sugar snap peas'],
+    'pomfret':['pomfrets','silver pomfret','frozen whole pomfrets','pomfret fillets'],
+    'beef tenderloin':['filets mignons','filet mignon','beef fillet','tenderloin'],
+    'parsnip':['parsnips'],
+    'absinthe':[],
+    'aperol':['aperol apéritif'],
+    'tequila':['centenario or other good-quality reposado tequila','reposado tequila','blanco tequila'],
+    'prosecco':['cl bottle prosecco, well chilled','75cl bottle prosecco','sparkling prosecco'],
     'orange':['oranges','blood orange','orange juice'],
     'apples':['apple','green apple','bramley apple','granny smith'],
     'banana':['bananas','ripe banana'],
@@ -378,7 +393,7 @@ SYNONYMS = {
     'yard-long beans':['yard long beans','cut-up yard-long beans','long beans','chinese long beans'],
     'puff pastry':['frozen puff pastry','frozen puff pastry, completely thawed','puff pastry sheets','puff pastry, thawed'],
     'wheat berries':['kanak','kanak or wheat berries','whole wheat berries','wheat'],
-    'bread buns':['white bread','white hamburger-style buns','white finger-sandwich-style buns','finger sandwich-style buns','white finger-sandwich-style buns, about 3 inches in diameter','white, finger sandwich-style buns','hamburger buns','dinner rolls','bread rolls','paav','pav buns','pao','pav','brioche buns','white bloomer','sourdough','bloomer','soft white roll','soft white rolls','sourdough bread','thick slice of white bloomer or sourdough','slice of white bloomer','slice of sourdough','white bloomer or sourdough','thick slices of white bloomer, sourdough or brioche','white bloomer, sourdough or brioche','slices of bloomer','fire toast'],
+    'bread buns':['white bread','white hamburger-style buns','white finger-sandwich-style buns','finger sandwich-style buns','white finger-sandwich-style buns, about 3 inches in diameter','white, finger sandwich-style buns','hamburger buns','dinner rolls','bread rolls','paav','pav buns','pao','pav','brioche buns','white bloomer','sourdough','bloomer','soft white roll','soft white rolls','sourdough bread','thick slice of white bloomer or sourdough','slice of white bloomer','slice of sourdough','white bloomer or sourdough','thick slices of white bloomer, sourdough or brioche','white bloomer, sourdough or brioche','slices of bloomer','brioche loaf','brioche'],
     'chickpeas':['garbanzo beans','kabuli chana','canned chickpeas','dried chickpeas','white chickpeas','tinned chickpeas'],
     'black chickpeas':['kala chana','desi chana'],
     'green chickpeas':['hara chana'],
@@ -393,7 +408,7 @@ SYNONYMS = {
     'yellow peas, whole':['safed vatana','dried yellow peas','whole yellow peas'],
     'masoor dal, split':['red lentils','masoor dal','split red lentils','skinned masoor','skinned split brown lentils','split brown lentils','brown lentils, split','salmon-colored brown lentils'],
     'masoor, whole':['whole brown lentils','sabud masoor','brown lentils'],
-    'toovar dal':['toor dal','arhar dal','pigeon peas, split','split pigeon peas','tuvar dal','yellow pigeon peas','split yellow pigeon peas','skinned split yellow pigeon peas','oily skinned split yellow pigeon peas','unoily skinned split yellow pigeon peas','toovar lentils'],
+    'toovar dal':['toor dal','arhar dal','pigeon peas, split','split pigeon peas','tuvar dal','yellow pigeon peas','split yellow pigeon peas','skinned split yellow pigeon peas','oily skinned split yellow pigeon peas','unoily skinned split yellow pigeon peas','toovar lentils','oily or unoily skinned split yellow'],
     'toovar, whole':['whole pigeon peas','sabud toovar','sabud toor','whole yellow pigeon peas'],
     'moth beans':['matki','moth','dew gram'],
     'horse gram':['kulith','kollu'],
@@ -406,7 +421,7 @@ SYNONYMS = {
     'pecans':['pecan'],
     'hazelnuts':['hazelnut','blanched hazelnuts'],
     'coconut, fresh':['fresh coconut','grated coconut','grated fresh coconut','fresh grated coconut','shredded fresh coconut'],
-    'coconut, dried':['dried coconut','dessicated coconut','desiccated coconut','copra','unsweetened shredded coconut','shredded coconut','shredded dried unsweetened coconut','fine desiccated coconut'],
+    'coconut, dried':['dried coconut','dessicated coconut','desiccated coconut','copra','unsweetened shredded coconut','shredded coconut','shredded dried unsweetened coconut','fine desiccated coconut','dried coconut flakes','coconut flakes'],
     'coconut milk':['canned coconut milk','thick coconut milk','thin coconut milk','unsweetened coconut milk','tinned coconut milk','full-fat coconut milk'],
     'coconut, whole':['coconut','nariyal','thenga'],
     'coconut cream':['thick coconut cream'],
@@ -533,9 +548,19 @@ def clean_title(s):
 def extract_ingredient_name(line_text):
     """Strip qty/unit/preps, return (amount, unit, name_core)."""
     name = line_text
+    # Normalize curly quotes/apostrophes to straight so aliases match
+    # (e.g. "bishop's weed" alias vs "bishop’s weed" in the source).
+    name = name.replace('’', "'").replace('‘', "'").replace('“', '"').replace('”', '"')
     # Strip leading "A pinch of", "A few", "A handful of" patterns
     name = re.sub(r'^a\s+(pinch|few|handful|small handful|large handful|generous pinch|tiny pinch|good pinch|knob|generous knob|drizzle|splash|dash|squeeze|sprinkle|spoonful|good\s+\S+)\s+of\s+', '', name, flags=re.I)
     name = re.sub(r'^a\s+(pinch|few|handful|knob|drizzle|splash|dash|squeeze|sprinkle|spoonful)\s+', '', name, flags=re.I)
+    # Strip leading "1 recipe X" or "1 quantity X" pattern (660-style sub-recipe ref)
+    name = re.sub(r'^(\d+(?:\.\d+)?)\s+(?:recipe|quantity)\s+', r'\1 ', name, flags=re.I)
+    # Strip leading "about/approximately/roughly" qualifiers before an amount
+    name = re.sub(r'^(about|approximately|approx\.?|roughly|around|nearly|almost)\s+(?=\d|[¼½¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚])', '', name, flags=re.I)
+    # Strip leading approximations like "scant", "generous" before a number or unit
+    name = re.sub(r'^(scant|generous|heaped|heaping|good|big)\s+(?=\d|[¼½¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|tsp|tbsp|tablespoon|teaspoon|cup|pinch|handful)', '', name, flags=re.I)
+    name = re.sub(r'^(tin|packet|jar|bottle|can)\s+(?:of\s+)?', '', name, flags=re.I)
     amount, idx = parse_amount(name)
     rest = name[idx:].strip() if amount is not None else name
     unit = ''
@@ -563,11 +588,11 @@ def extract_ingredient_name(line_text):
     rest_no_paren = re.sub(r'\s+([,;.])', r'\1', rest_no_paren)
     rest_no_paren = re.sub(r'\s{2,}', ' ', rest_no_paren)
     # Allow up to 2 adverbs before a prep verb ("very finely chopped", "roughly torn", "plus an extra X")
-    split_re = r'(?:;|,\s*(?:(?:finely|coarsely|roughly|thinly|lightly|freshly|partially|fully|very)\s+){0,2}(?:chopped|sliced|diced|minced|grated|crushed|halved|quartered|peeled|cored|seeded|stemmed|trimmed|cubed|shredded|julienned|cut|broken|torn|beaten|whisked|whipped|toasted|roasted|softened|melted|drained|rinsed|smashed|bruised|crumbled|squeezed|squashed|optional|divided|to taste|or more|or to taste|plus (?:more|extra|an extra|a little)|preferably|picked over|washed|soaked|skinned|deveined|deboned|boneless|skin-on|warmed|reconstituted|stems? removed|seeds? removed|tail-on|made (?:from|of|with)|at least|about|each|approximately|approx\.?|page\b|recipe\b|for [a-z\- ]+))'
+    split_re = r'(?:;|,\s*(?:(?:finely|coarsely|roughly|thinly|lightly|freshly|partially|fully|very)\s+){0,2}(?:chopped|sliced|diced|minced|grated|crushed|halved|quartered|peeled|cored|seeded|deseeded|stemmed|trimmed|cubed|shredded|julienned|cut|broken|torn|beaten|whisked|whipped|toasted|roasted|softened|melted|drained|rinsed|smashed|bruised|crumbled|squeezed|squashed|optional|divided|to taste|to finish|to garnish|to serve|to top|or more|or to taste|plus (?:more|extra|an extra|a little|a few)|preferably|picked over|picked|washed|soaked|skinned|deveined|deboned|boneless|skin-on|warmed|reconstituted|stems? removed|seeds? removed|stalks? removed|ends trimmed|see (?:note|notes|tip|step|recipe|above|below)|tail-on|made (?:from|of|with)|ground to a paste|at least|about|each|approximately|approx\.?|page\b|recipe\b|for [a-z\- ]+))'
     rest_clean = re.split(split_re, rest_no_paren, maxsplit=1)[0]
-    rest_clean = re.sub(r'\s+(?:to taste|as needed|or to taste|optional|divided|for garnish|for serving|for tempering|for frying|for deep-frying|for pan-frying|for greasing|for dusting|for kneading|for brushing|for sprinkling|at room temperature|room temperature).*$', '', rest_clean, flags=re.I)
-    rest_clean = re.sub(r',\s*(?:plus (?:more|extra)|well rinsed|rinsed and drained|tough stems? discarded|tough ends? discarded|stem removed|stems? removed|seeds? removed|soaked\b|at room temperature|partially thawed|thawed).*$', '', rest_clean, flags=re.I)
-    rest_clean = re.sub(r'\s+for\s+(?:pan-frying|deep-frying|frying|tempering|garnish|garnishing|serving|brushing|kneading|dusting|sprinkling).*$', '', rest_clean, flags=re.I)
+    rest_clean = re.sub(r'\s+(?:to taste|as needed|or to taste|optional|divided|for garnish|for serving|for tempering|for frying|for deep-frying|for pan-frying|for greasing|for dusting|for kneading|for brushing|for sprinkling|for grilling|for spreading|at room temperature|room temperature).*$', '', rest_clean, flags=re.I)
+    rest_clean = re.sub(r',\s*(?:plus (?:more|extra|an extra|a few)|well rinsed|rinsed and drained|tough stems? discarded|tough ends? discarded|stem removed|stems? removed|seeds? removed|stalks? removed|ends trimmed|soaked\b|at room temperature|partially thawed|thawed|see (?:note|notes|tip|step|recipe|above|below)\b|to (?:finish|garnish|serve|top)|ground to a paste).*$', '', rest_clean, flags=re.I)
+    rest_clean = re.sub(r'\s+for\s+(?:pan-frying|deep-frying|frying|tempering|garnish|garnishing|serving|brushing|kneading|dusting|sprinkling|grilling|spreading).*$', '', rest_clean, flags=re.I)
     tokens = rest_clean.split()
     while tokens and tokens[0].lower() in STOPWORDS:
         tokens.pop(0)

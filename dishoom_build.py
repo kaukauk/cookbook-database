@@ -73,6 +73,17 @@ NON_RECIPE_FILES = {'22_Ingredients___cookery_guidance', 'nav'}
 NON_RECIPE_TITLES = {
     'preparatory recipes', 'breads', 'chutneys, pickles & dressings',
     'index', 'contents', 'gratitude',
+    # Dishoom uses 'ON …' section banners with C646 styling — not recipes
+    'on biryani', 'on grilling', 'on cocktail making',
+}
+
+# Cross-ref link texts that don't name an ingredient. Fall back to parsing the
+# rest of the ingredient line when the link text is one of these.
+UNINFORMATIVE_LINK_TEXTS = {
+    'here', 'see here', 'this page', 'previous page', 'next page',
+    'above', 'below', 'right', 'left', 'opposite',
+    'the recipe', 'recipe', 'see recipe', 'see note', 'see notes',
+    'see step 1', 'see step', 'see tip', 'as before', 'as above',
 }
 
 # Method-method subsection headers that some Preparatory recipes use to give
@@ -222,26 +233,31 @@ def resolve_ingredients(recipes, by_anchor, sub_titles):
             # canonical (more precise than the recipe title when one recipe
             # bundles multiple distinct sub-recipes, e.g. "Garlic & Ginger
             # Pastes" is referenced as "garlic paste" or "ginger paste").
+            # Fall back to parsing the line if link text is uninformative
+            # ("here", "see note", "above", etc).
+            use_link = False
             if ing['ref_pairs']:
                 tf, anch, link_text = ing['ref_pairs'][0]
                 aid = f'{tf}#{anch}'
-                # Normalize link text: lowercase, collapse whitespace, strip punctuation
                 lt = re.sub(r'\s+', ' ', link_text).strip().lower().rstrip('.,;:')
-                # Try canonicalize on the link text first (catches things like
-                # "garam masala" already in SYNONYMS), else fall back to raw.
-                canon_lt = canonicalize(lt, subrecipe_title_lookup)
-                if aid in by_anchor:
-                    sub = by_anchor[aid]
-                    via_rec_id = sub.get('rec_id')
-                    is_subref = True
-                    canon = canon_lt if canon_lt and canon_lt != lt else lt
-                    # If the sub-recipe is a single-anchor recipe and link text
-                    # equals its title, just use the title (more uniform).
-                    if len(sub['all_anchor_ids']) == 1 and canon in (sub['title'].lower(), lt):
-                        canon = sub['title'].lower()
+                if lt in UNINFORMATIVE_LINK_TEXTS or len(lt) < 3:
+                    # uninformative — fall through to canonicalize(name_core)
+                    pass
                 else:
-                    canon = canon_lt or lt
-            else:
+                    use_link = True
+                    canon_lt = canonicalize(lt, subrecipe_title_lookup)
+                    if aid in by_anchor:
+                        sub = by_anchor[aid]
+                        via_rec_id = sub.get('rec_id')
+                        is_subref = True
+                        canon = canon_lt if canon_lt and canon_lt != lt else lt
+                        # If the sub-recipe is single-anchor and link text equals
+                        # its title, prefer the title (more uniform).
+                        if len(sub['all_anchor_ids']) == 1 and canon in (sub['title'].lower(), lt):
+                            canon = sub['title'].lower()
+                    else:
+                        canon = canon_lt or lt
+            if not use_link:
                 canon = canonicalize(name_core, subrecipe_title_lookup)
                 if canon is None:
                     continue
