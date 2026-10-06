@@ -1,0 +1,84 @@
+================================================================
+KITCHEN vs ROOM INVENTORY
+================================================================
+Recorded 27 Sep 2026. Companion to jar_storage_system.txt.
+
+The rule: when a recipe is requested, check its ingredients
+against the ROOM and NOT-OWNED lists below and say up front
+what needs fetching from the room or buying.
+
+Makeability (660 Curries, 652 non-subrecipe recipes):
+  Kitchen only ............ 521 / 652  (80%)
+  Incl. room items ........ 572 / 652  (88%)
+  Cost of the room split ...  51 recipes
+
+================================================================
+IN THE ROOM -- must be fetched (7 items)
+================================================================
+  Rice flour                 -- blocks 19, now the worst offender
+  Masoor dal (split)         -- blocks 10
+  Black-eyed beans           -- blocks 10
+  Mung beans (whole)         -- blocks 5
+  Urad dal (whole, black)    -- blocks 4
+  Masoor (whole)             -- blocks 3
+  Atta (whole-wheat flour)   -- blocks 1
+  Semolina (raw sooji)       -- but ROASTED RAVA is in the kitchen
+
+NOTE: besan MOVED TO THE KITCHEN 27 Sep 2026 (250 ml jar, as the
+jar system intends) -- recovered 36 recipes. Atta is also meant to
+be a kitchen jar (350 ml) but is still in the room. Rice flour is
+now the biggest single win available: 19 recipes.
+
+================================================================
+NOT OWNED AT ALL
+================================================================
+  Walnuts (1 recipe)          Dates (8)
+  Dried apricots (2)          Cracked wheat / dalia (8)
+  Sabudana (1)                Rose water (2)
+  Kewra water (2)             Chaat masala (substitute below)
+  Cayenne -- SUBSTITUTED 1:1 with ground dried red chiles (user
+    call; treated as owned. It appears in 398 recipes, so this
+    substitution is what keeps the numbers viable.)
+
+  Uncertain / marked x on the bottle shelf: malt vinegar,
+  mustard oil. If truly absent, both totals drop by ~25, since
+  they feed spice pastes other curries build on.
+
+SUBSTITUTIONS IN USE
+  Cayenne        <- grind dried red chiles
+  Chaat masala   <- amchur + ground cumin + salt, roughly 2:1:1
+  Fresh curry leaves <- dried; add to hot oil with the tempering,
+                        not to the simmering liquid
+
+================================================================
+IN THE KITCHEN
+================================================================
+10 ml   saffron, asafetida, mace, nutmeg, ground ginger
+25 ml   cloves, green cardamom, black cardamom, fenugreek seeds,
+        nigella, black cumin, ajwain, anardana, black salt, amchur
+45 ml   mustard seeds (LOW -- refill), fennel, black peppercorns,
+        cinnamon sticks, bay leaves, star anise, poppy seeds,
+        sesame seeds, turmeric, Kashmiri chile powder, garam masala,
+        panch phoron, kasuri methi, dried curry leaves, kokum,
+        desiccated coconut, cashews, peanuts, golden raisins,
+        urad dal split (added by user, also in 350 ml)
+85 ml   salt, cumin seeds (whole), coriander seeds (whole),
+        dried red chiles (whole), sugar
+120 ml  cashews, peanuts, almonds, pistachios, pine nuts,
+        golden raisins, desiccated coconut
+250 ml  chana dal, moong dal (split skinned), roasted rava, besan
+350 ml  basmati rice, toor dal, urad dal (skinned split),
+        whole chickpeas (kabuli chana -- PLENTY, never flag as a buy)
+tubs    rajma (red kidney beans)
+loose   poha (rice flakes), roasted chana (pottukadlai),
+        roasted vermicelli, tamarind block, tamarind paste
+oils    vegetable, sesame, olive, coconut, ghee
+bottled tamarind concentrate, honey, soy sauce
+fresh   all produce, dairy, meat and fish assumed bought weekly
+
+STARCHES ON HAND (free choice, no need to shop for these)
+  paratha, chapati, naan, bread, dosa, basmati rice,
+  parboiled ponni rice -- plus anything else makeable from
+  flour/rice at home (puri, appam, idli, etc.)
+  RICE RULE: basmati or parboiled ponni ONLY -- never suggest
+  jasmine, long-grain, arborio or brown rice for Indian meals.
