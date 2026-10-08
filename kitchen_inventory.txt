@@ -13,7 +13,7 @@ Makeability (660 Curries, 652 non-subrecipe recipes):
   Cost of the room split ...  51 recipes
 
 ================================================================
-IN THE ROOM -- must be fetched (7 items)
+IN THE ROOM -- must be fetched (6 items)
 ================================================================
   Rice flour                 -- blocks 19, now the worst offender
   Masoor dal (split)         -- blocks 10
@@ -21,12 +21,11 @@ IN THE ROOM -- must be fetched (7 items)
   Mung beans (whole)         -- blocks 5
   Urad dal (whole, black)    -- blocks 4
   Masoor (whole)             -- blocks 3
-  Atta (whole-wheat flour)   -- blocks 1
   Semolina (raw sooji)       -- but ROASTED RAVA is in the kitchen
 
 NOTE: besan MOVED TO THE KITCHEN 27 Sep 2026 (250 ml jar, as the
-jar system intends) -- recovered 36 recipes. Atta is also meant to
-be a kitchen jar (350 ml) but is still in the room. Rice flour is
+jar system intends) -- recovered 36 recipes. Atta MOVED TO THE KITCHEN
+6 Oct 2026. Rice flour is
 now the biggest single win available: 19 recipes.
 
 ================================================================
@@ -49,14 +48,39 @@ SUBSTITUTIONS IN USE
   Chaat masala   <- amchur + ground cumin + salt, roughly 2:1:1
   Fresh curry leaves <- dried; add to hot oil with the tempering,
                         not to the simmering liquid
+  Double cream   <- HOMEMADE CASHEW CREAM, 1:1, always. Soak 60 g
+                    cashews in hot water 30 min, drain, blend with
+                    120 ml fresh water until silky (~150 ml). Made
+                    in the prep session before the week's dishes.
+
+MADE AT HOME FROM MILK / SCRATCH -- never put these on a shopping
+list; list the raw input instead and schedule the prep
+  Dahi (yoghurt)  <- whole milk + 1 tbsp live yoghurt as starter.
+                     ~1:1 by weight. Covers raita and buttermilk
+                     (buttermilk = 100 g dahi + 60 ml water).
+  Paneer          <- whole milk + acid. ~1 litre milk per 120 g.
+  Cashew cream    <- see above; replaces double cream.
+  Tomato paste    <- when a recipe needs it: ~300 g tomatoes cooked
+                     down and sieved gives 2-3 tbsp. Freeze spares.
+  All of these are made in the PREP SESSION ahead of the dishes
+  that need them, and the plan must say which day.
+
+FREEZER / TINS (added 6 Oct 2026)
+  frozen grated coconut (use as fresh, thawed), frozen peas,
+  coconut milk
+  Fresh curry leaves are never bought -- dried only.
 
 ================================================================
 IN THE KITCHEN
 ================================================================
+RULE (6 Oct 2026): every jar/tub/oil below, plus rice (basmati,
+parboiled ponni), atta and plain flour, has backup stock.
+ASSUME ALL FULL. Never put them on a shopping list or on the
+"already have -- check" list unless the user says one is low.
 10 ml   saffron, asafetida, mace, nutmeg, ground ginger
 25 ml   cloves, green cardamom, black cardamom, fenugreek seeds,
         nigella, black cumin, ajwain, anardana, black salt, amchur
-45 ml   mustard seeds (LOW -- refill), fennel, black peppercorns,
+45 ml   mustard seeds (refilled 6 Oct 2026), fennel, black peppercorns,
         cinnamon sticks, bay leaves, star anise, poppy seeds,
         sesame seeds, turmeric, Kashmiri chile powder, garam masala,
         panch phoron, kasuri methi, dried curry leaves, kokum,
@@ -76,9 +100,40 @@ oils    vegetable, sesame, olive, coconut, ghee
 bottled tamarind concentrate, honey, soy sauce
 fresh   all produce, dairy, meat and fish assumed bought weekly
 
+STARCHES -- MADE FROM SCRATCH (rule from 6 Oct 2026)
+  Every starch is cooked from scratch and gets its own task in the
+  weekly plan. Only exception: frozen paratha (bought).
+  Rice needs no recipe, just the uncooked amount.
+  Plain wheat flour is ALWAYS on hand -- never on a shopping list.
+  Atta is in the kitchen (moved 6 Oct 2026).
+
 STARCHES ON HAND (free choice, no need to shop for these)
   paratha, chapati, naan, bread, dosa, basmati rice,
   parboiled ponni rice -- plus anything else makeable from
   flour/rice at home (puri, appam, idli, etc.)
   RICE RULE: basmati or parboiled ponni ONLY -- never suggest
   jasmine, long-grain, arborio or brown rice for Indian meals.
+
+================================================================
+EQUIPMENT (6 Oct 2026)
+================================================================
+Every recipe task lists two lines: "Cupboard equipment" (things to
+fetch, incl. small appliances stored there, and say when a lid is
+needed) and "Appliances" (worktop only).
+
+IN THE CUPBOARD -- must be grabbed
+  stainless steel pan       non-stick pan
+  stainless steel pot       small tadka frying pan
+  2 l pressure cooker       5 l pressure cooker
+  hand blender              cast iron spice grinder
+  Sujata jars, smallest to largest: chutney jar, dry grinding
+  jar, wet grinding jar. The Sujata base is on the worktop but
+  the JARS are in the cupboard -- name the jar under "Cupboard
+  equipment" and the Sujata itself under "Appliances".
+  The cast iron spice grinder is STRICTLY DRY: no pastes, nothing
+  wet. NUTS: anything more than a little is ground in the Sujata.
+
+ALWAYS OUT ON THE WORKTOP -- list under "Appliances"
+  stand mixer               Sujata mixer grinder
+  rice cooker               smoothie blender
+  microwave
