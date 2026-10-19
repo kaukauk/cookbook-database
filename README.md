@@ -16,8 +16,8 @@ on 6 Oct 2026; full git history came with it.
 | `cookbook_common.py`, `*_build.py` | The DB build pipeline. |
 | `_analysis/makeable*.py` | Makeability scripts written 6 Oct: available-set model + blocker attribution. |
 | `_claude-archive/` | Chat transcript and Claude memories from the move. |
-| `THIS_WEEK.md` | Current meal plan. |
-| `PLAN_FORMAT.md` | The rules `THIS_WEEK.md` is written to: workflow, task types, mise en place layout, the prompt for the Google Tasks AI. |
+| `weeks/` | One plan per week, named by its shopping day (`weeks/2026-10-19.md`). The newest is the current week. |
+| `PLAN_FORMAT.md` | The rules each weekly plan is written to: workflow, task types, mise en place layout, the prompt for the Google Tasks AI. |
 | `cooked_log.md` | Dishes already cooked, so weekly selection doesn't repeat them. |
 
 ## Gotchas
