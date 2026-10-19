@@ -48,7 +48,7 @@ starch, side, main.
 | Type | What it is |
 |---|---|
 | `shopping` | The two shopping tables. On the day before the first dish. |
-| `main make-ahead` / `side make-ahead` | **Keeps, and takes 30 minutes or more** (mostly waiting): dahi, paneer, thick yogurt, tomato paste, cashew cream, cooked legumes. Has a **Keeps** line so the user can move it to any earlier free day. |
+| `make-ahead main` / `make-ahead side` | **Keeps, and takes 30 minutes or more** (mostly waiting): dahi, paneer, thick yogurt, tomato paste, cashew cream, cooked legumes. Has a **Keeps** line so the user can move it to any earlier free day. |
 | `main prep` / `side prep` | **Keeps, under 30 minutes**: a quick sub-recipe that could be done earlier (ginger paste, fried onion paste). Expected to be rare. |
 | `pre-main` | **Doesn't keep, 30 minutes or more**: a wait that must happen just before that day's **main** can start. Thawing; making a marinade and letting the fish sit in it; soaking; a simmer of several hours. A dish can have **more than one**. |
 | `pre-side` | The same thing for a **side**. A side is a standalone dish in its own right, so its ahead-of-time work is never folded into the pre-main. Title it `Pre-side — ...`. |
@@ -57,8 +57,8 @@ starch, side, main.
 | `main` | |
 
 - **Naming make-ahead and prep tasks.** Title and type say which dish it is for, by the first dish
-  that uses it: `Main make-ahead — Paneer`, `Side prep — Ginger paste`. If it sits on a different day
-  from that dish for timing reasons, prefix the dish's day: `Tues side make-ahead — Dahi`. Day words:
+  that uses it: `Make-ahead main — Paneer`, `Side prep — Ginger paste`. If it sits on a different day
+  from that dish for timing reasons, prefix the dish's day: `Tues make-ahead side — Dahi`. Day words:
   Mon, Tues, Wed, Thurs, Fri, Sat, Sun. The Type field has no day.
 - **Fetching from the room is never a task**: it is the dish's `Fetch from the room` line.
 - A make-ahead or prep task is scheduled on the day of the **first** dish that uses it. Later dishes reuse the batch
@@ -154,7 +154,7 @@ the overview table. Update the task count in it each week. It tells the AI to:
   State the expected count.
 - Fall back to all-day Calendar events if Google Tasks is unavailable, and say so.
 - Set the due date from the `## ` day heading, with the year, no time of day, and not move tasks earlier.
-- Title: the text after `### TASK: `, prefixed with its position in the day (`1/6 Main make-ahead — ...`).
+- Title: the text after `### TASK: `, prefixed with its position in the day (`1/6 Make-ahead main — ...`).
 - Notes: the whole task body, every field, copied exactly as plain text with its structure kept. No
   scaling, rounding, unit conversion, reordering or summarising.
 - Shopping task: both tables in full; the Buy column is the amount to buy and already includes the buffer.
