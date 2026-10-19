@@ -1,48 +1,43 @@
-# dinner-plan
+# cookbook-database
 
-Cookbook database + meal planning. Moved here from `kaustubh-pc-arch:~/Documents/GitHub/cookbook-database`
-on 6 Oct 2026; full git history came with it.
+A SQLite database of recipes and ingredients built from two Indian cookbooks (*660 Curries* and *Dishoom*), plus scripts that use it to plan weekly dinners around what's in my pantry.
 
-## What's here
+The build pipeline parses each cookbook's EPUB, extracts every recipe's ingredient lines, normalises quantities to grams, maps hundreds of ingredient spellings onto canonical names, and links sub-recipes (spice blends, pastes, sauces) so a recipe's full ingredient list can be expanded recursively.
 
-| File | What it is |
+## What it does
+
+- **EPUB parsing:** finds recipe boundaries, titles, yields and ingredient lines from the books' XHTML markup, keyed by each recipe's anchor ID.
+- **Ingredient parsing:** splits each line into amount, unit and ingredient name. It handles unicode and ASCII fractions, mixed numbers and ranges, and strips prep words ("finely chopped", "to taste").
+- **Canonicalisation:** a curated synonym table (~210 canonical ingredients, ~750 aliases) with fallback matching on descriptors, n-grams and substrings.
+- **Gram estimates:** volume and count units are converted to grams using a density table and per-piece weights.
+- **Sub-recipe expansion:** when a recipe calls for another recipe (e.g. a garam masala blend), that recipe's ingredients are scaled and expanded in, with cycle detection and a depth limit.
+- **Analysis:** `_analysis/makeable*.py` works out which recipes can be cooked with the current pantry and which missing ingredients block the most recipes.
+
+The database has 809 recipes. It stores ingredient lines only, not cooking methods.
+
+## Schema
+
+| Table | Contents |
 |---|---|
-| `cookbook.db` | SQLite, 809 recipes: 660 Curries (652 non-sub) + Dishoom. Ingredients only, **no methods**. |
-| `kitchen_inventory.txt` | **Source of truth** for what's in the kitchen vs the room, substitutions, starch rules. |
-| `jar_storage_system.txt` | The 63-jar storage system across 7 sizes, plus tubs/bags and workflow rules. |
-| `makeable_recipes.txt` | Which recipes the jar system covers, by category. |
-| `current-ingredients.txt` | Original pantry dump the whole thing was built from. |
-| `shopping_list.txt` | Jar-system build-out shopping list (annotated: `/` done, `x` outstanding). |
-| `cookbook_common.py`, `*_build.py` | The DB build pipeline. |
-| `_analysis/makeable*.py` | Makeability scripts written 6 Oct: available-set model + blocker attribution. |
-| `_claude-archive/` | Chat transcript and Claude memories from the move. |
-| `weeks/` | One plan per week, named by its shopping day (`weeks/2026-10-19.md`). The newest is the current week. |
-| `PLAN_FORMAT.md` | The rules each weekly plan is written to: workflow, task types, mise en place layout, the prompt for the Google Tasks AI. |
-| `cooked_log.md` | Dishes already cooked, so weekly selection doesn't repeat them. |
+| `book` | Source cookbooks |
+| `recipe` | Title, category, region, yield, and whether it's a sub-recipe |
+| `ingredient` | Canonical ingredients, with pantry-staple and sub-recipe flags and usage counts |
+| `ingredient_alias` | Alias → canonical name mappings |
+| `recipe_ingredient` | Parsed lines: raw text, amount, unit, gram estimate, and whether the row is direct or expanded from a sub-recipe |
 
-## Gotchas
+There are also views for ingredient frequency, overall and per book or category.
 
-- **Sub-recipes are stored AS ingredients.** `ingredient.is_subrecipe=1` with `subrecipe_recipe_id`
-  pointing at the component recipe. Spice blends, pastes and paneer are under *descriptive* canonical
-  names, so `WHERE title LIKE '%garam masala%'` will wrongly tell you something is missing. Follow the links.
-- **Methods are not in the DB.** They come from `660_Curries.epub`, still only on kaustubh-pc-arch at
-  `~/Documents/books/cookbooks/India/`. Unzip and read `ops/xhtml/chapter*.html`.
-- **Rice rule:** basmati or parboiled ponni only.
-- **Always flag room-stored items** when giving a recipe — see `kitchen_inventory.txt`.
+## Running it
 
-## Makeability as of 6 Oct 2026
+Requires Python 3 (standard library only). The source EPUBs aren't included, so set `DB_PATH` in `cookbook_common.py` and `source_path` in each `*_build.py` to your own paths, then:
 
-- Kitchen jars only: **521 / 652** (80%)
-- Including the 7 room-stored items: **572 / 652** (88%)
-- Biggest single win left: move **rice flour** to the kitchen (19 recipes)
+```
+python build_all.py
+```
 
-## Diet context for planning
+This drops and rebuilds `cookbook.db` and prints a summary of books, recipe counts and the most common ingredients.
 
-Breakfast is fixed and large: ~1052 kcal, 39 g protein, 20 g fibre, zero vegetables
-(90 g oats, 350 ml whole milk, 35 g peanut butter, 100 g yoghurt, 80 g banana, 100 g frozen berries,
-20 g honey, 10 g chia) + multivitamin + vitamin D, with a protein scoop planned (~+25 g).
-Target 2000-2500 kcal.
+## Other files
 
-So dinner should carry: **vegetables and potassium** (the only real gap), and **oily fish once or
-twice a week** for EPA/DHA, since chia only provides ALA. Dinner does **not** need to chase protein
-or calories. Recommended breakfast trims: oats 90 -> 65 g, milk 350 -> 250 ml, drop the honey.
+- `660_curries_methodology.md`: detailed notes on the parsing and canonicalisation approach
+- `weeks/`, `PLAN_FORMAT.md`, `cooked_log.md`, `kitchen_inventory.txt`: my weekly meal plans and the pantry data they're built from
