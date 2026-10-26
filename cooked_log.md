@@ -20,4 +20,8 @@ Not wanted: #512 carrots and peas with roasted chile-spice blend — planned for
 Not wanted again: #75 radish raita — user, 19 Oct 2026: wants something with radish, "but not that
 side we had last week and the week before".
 
-Week of 19-24 Oct 2026 (add once cooked): #344, #290, #76, #519, #563, #634, #422, #74, #510.
+- #344 fried cheese cubes with a spinach sauce (week of 19 Oct 2026)
+- #290 pan-grilled mackerel with a tamarind sauce (week of 19 Oct 2026)
+
+Week of 27-30 Oct 2026 (add once cooked; not made on 21-24 Oct, moved here): #563, #634, #422, #74,
+#519, #510.
