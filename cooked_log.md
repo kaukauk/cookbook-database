@@ -26,4 +26,4 @@ side we had last week and the week before".
 - #510 chopped cabbage with a yellow split pea sauce (week of 26 Oct 2026)
 - #474 peppery pigeon peas with garlic and cumin (week of 26 Oct 2026)
 
-Week of 2-6 Nov 2026 (add once cooked): #519, #16, #422, #74, #563, #634, #625.
+Week of 2-6 Nov 2026 (add once cooked): #519, #183, #422, #74, #563, #634, #625.
