@@ -152,7 +152,12 @@ the overview table. Update the task count in it each week. It tells the AI to:
 
 - Create exactly one task per `### TASK:` heading and nothing else; no merging, splitting or skipping.
   State the expected count.
-- Fall back to all-day Calendar events if Google Tasks is unavailable, and say so.
+- **Use Google Tasks only, never Google Calendar events** (user, 2 Nov 2026, after Gemini made 17
+  all-day Calendar events). The prompt says so in bold at the top, explains that a task with a due
+  date showing in Calendar with a checkbox is fine but an event is not, and tells the AI to create
+  nothing and report back if it cannot reach Google Tasks. No Calendar fallback.
+- Put everything in a task list called `Cooking` (create it if missing).
+- Ask it to confirm it used Google Tasks and which list.
 - Set the due date from the `## ` day heading, with the year, no time of day, and not move tasks earlier.
 - Title: the text after `### TASK: `, prefixed with its position in the day (`1/6 Make-ahead main — ...`).
 - Notes: the whole task body, every field, copied exactly as plain text with its structure kept. No
