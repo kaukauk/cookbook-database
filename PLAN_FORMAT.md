@@ -15,14 +15,19 @@ worked example. The file's end use is to be handed to another AI that loads it i
 ## Quantities
 
 - Baseline is 2 portions. Every amount inside a task is the exact cooking amount.
-- The shopping list's Buy column is cook amount +25%, rounded up. The buffer never goes in the pot.
+- Shopping amounts are cook amount +25%, rounded up to a buyable size. The buffer never goes in the pot.
 - Ingredients are counted once. Use the book's own ingredient lines for a dish (`source='direct'` in
   `cookbook.db`), not the expanded sub-recipe rows. A prep task owns its ingredients.
 
 ## Shopping list
 
-- Two tables: **Buy**, and **Already have — check before leaving**.
-- The check table covers only fresh items, freezer, tins and room-stored items. Ask each week what
+- **No tables** (user, 2 Nov 2026: Google Tasks can't render them). Two plain lists:
+  - **To buy**, grouped under short plain headings (Meat / Fish, Vegetables, Dairy, Tins and frozen),
+    one line each: `- Item — buy amount`. Only the amount to buy: no cook amount, no "used in"/"for".
+    A short qualifier is fine where it changes the purchase ("unless some is left").
+  - **Assumed you have — check before leaving**: `- Item — amount needed`, ending with the
+    "Jars, oils, rice, atta and dals — assumed stocked" line.
+- The check list covers only fresh items, freezer, tins and room-stored items. Ask each week what
   fresh items are on hand.
 - Never listed, assumed full until the user says otherwise: everything in the jar system, oils, rice
   (basmati, parboiled ponni), atta, plain wheat flour, dried chickpeas.
@@ -162,6 +167,6 @@ the overview table. Update the task count in it each week. It tells the AI to:
 - Title: the text after `### TASK: `, prefixed with its position in the day (`1/6 Make-ahead main — ...`).
 - Notes: the whole task body, every field, copied exactly as plain text with its structure kept. No
   scaling, rounding, unit conversion, reordering or summarising.
-- Shopping task: both tables in full; the Buy column is the amount to buy and already includes the buffer.
+- Shopping task: copy both plain lists line for line; the amounts are what to buy and already include the buffer.
 - Keep each Running order on its own task; never mix the main and the side.
 - Finish by listing the tasks created, grouped by day, and flag anything ambiguous instead of guessing.
