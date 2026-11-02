@@ -22,10 +22,13 @@ worked example. The file's end use is to be handed to another AI that loads it i
 ## Shopping list
 
 - **No tables** (user, 2 Nov 2026: Google Tasks can't render them). Two plain lists:
-  - **To buy**, grouped under short plain headings (Meat / Fish, Vegetables, Dairy, Tins and frozen),
-    one line each: `- Item — buy amount`. Only the amount to buy: no cook amount, no "used in"/"for".
+  - **To buy**, grouped under capitalised headings with a colon (`MEAT:`, `VEGETABLES:`, `DAIRY:`,
+    `TINS AND FROZEN:`), one line each: `• Item — buy amount`. The whole list sits in a code block,
+    with **no blank line between a heading and its items** and only one blank line, between the two
+    lists. (2 Nov 2026: with blank lines after headings, Gemini attached each heading to the items
+    above it.) Only the amount to buy: no cook amount, no "used in"/"for".
     A short qualifier is fine where it changes the purchase ("unless some is left").
-  - **Assumed you have — check before leaving**: `- Item — amount needed`, ending with the
+  - **ASSUMED YOU HAVE — CHECK BEFORE LEAVING**: `• Item — amount needed`, ending with the
     "Jars, oils, rice, atta and dals — assumed stocked" line.
 - The check list covers only fresh items, freezer, tins and room-stored items. Ask each week what
   fresh items are on hand.
