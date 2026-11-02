@@ -23,5 +23,7 @@ side we had last week and the week before".
 - #344 fried cheese cubes with a spinach sauce (week of 19 Oct 2026)
 - #290 pan-grilled mackerel with a tamarind sauce (week of 19 Oct 2026)
 
-Week of 27-31 Oct 2026 (add once cooked; all but #474 were not made on 21-24 Oct and moved here):
-#563, #634, #422, #74, #519, #510, #474.
+- #510 chopped cabbage with a yellow split pea sauce (week of 26 Oct 2026)
+- #474 peppery pigeon peas with garlic and cumin (week of 26 Oct 2026)
+
+Week of 2-6 Nov 2026 (add once cooked): #519, #16, #422, #74, #563, #634, #625.
