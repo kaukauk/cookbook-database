@@ -117,11 +117,12 @@ starch, side, main.
 - **Makes / Used in / Keeps / Why today** — make-ahead and prep tasks.
 - **Reuses** — a batch made on an earlier task.
 - **Time**
-- **Fetch from the room**
+- **Fetch from the room** — room-stored ingredients with amounts, and the specific Sujata jar (the
+  jars live in the room since 3 Nov 2026).
 - **Stove** — pans, pots and pressure cookers, saying when a lid is needed; then, after a semicolon,
   the oils or fats, named without an amount.
 - **Cupboard equipment** — everything else fetched from the cupboard: utensils, hand blender, cast
-  iron spice grinder, and the specific Sujata jar.
+  iron spice grinder. Not the Sujata jars: they are in the room.
 - **Appliances** — worktop appliances only: stand mixer, Sujata mixer grinder, rice cooker, smoothie
   blender, microwave.
 

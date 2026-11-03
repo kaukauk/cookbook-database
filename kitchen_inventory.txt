@@ -117,21 +117,25 @@ STARCHES ON HAND (free choice, no need to shop for these)
 ================================================================
 EQUIPMENT (6 Oct 2026)
 ================================================================
-Every recipe task lists two lines: "Cupboard equipment" (things to
-fetch, incl. small appliances stored there, and say when a lid is
-needed) and "Appliances" (worktop only).
+Every recipe task lists "Cupboard equipment" (things to fetch,
+incl. small appliances stored there, and say when a lid is needed),
+"Appliances" (worktop only), and the Sujata jar, when used, on its
+"Fetch from the room" line.
 
 IN THE CUPBOARD -- must be grabbed
   stainless steel pan       non-stick pan
   stainless steel pot       small tadka frying pan
   2 l pressure cooker       5 l pressure cooker
   hand blender              cast iron spice grinder
-  Sujata jars, smallest to largest: chutney jar, dry grinding
-  jar, wet grinding jar. The Sujata base is on the worktop but
-  the JARS are in the cupboard -- name the jar under "Cupboard
-  equipment" and the Sujata itself under "Appliances".
+  (Sujata jars are NOT here any more -- see IN THE ROOM below.)
   The cast iron spice grinder is STRICTLY DRY: no pastes, nothing
   wet. NUTS: anything more than a little is ground in the Sujata.
+
+IN THE ROOM -- must be fetched (moved 3 Nov 2026)
+  Sujata jars, smallest to largest: chutney jar, dry grinding
+  jar, wet grinding jar. The Sujata base is on the worktop but
+  the JARS are in the room -- name the jar under "Fetch from the
+  room" and the Sujata itself under "Appliances".
 
 ALWAYS OUT ON THE WORKTOP -- list under "Appliances"
   stand mixer               Sujata mixer grinder
