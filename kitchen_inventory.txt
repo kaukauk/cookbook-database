@@ -22,6 +22,8 @@ IN THE ROOM -- must be fetched (6 items)
   Urad dal (whole, black)    -- blocks 4
   Masoor (whole)             -- blocks 3
   Semolina (raw sooji)       -- but ROASTED RAVA is in the kitchen
+  Coconut milk (tins)        -- always stored here (3 Nov 2026);
+                                an opened tin goes in the fridge
 
 NOTE: besan MOVED TO THE KITCHEN 27 Sep 2026 (250 ml jar, as the
 jar system intends) -- recovered 36 recipes. Atta MOVED TO THE KITCHEN
@@ -66,8 +68,8 @@ list; list the raw input instead and schedule the prep
   that need them, and the plan must say which day.
 
 FREEZER / TINS (added 6 Oct 2026)
-  frozen grated coconut (use as fresh, thawed), frozen peas,
-  coconut milk
+  frozen grated coconut (use as fresh, thawed), frozen peas
+  (Coconut milk tins are kept in the ROOM -- see below.)
   frozen chopped coriander (about 100 g on 3 Nov 2026): use it in
   cooked dishes instead of buying a bunch; buy fresh only when it's
   eaten raw (slaws, raitas, garnish). Put it on the check list,
