@@ -48,6 +48,13 @@ worked example. The file's end use is to be handed to another AI that loads it i
 
 No "already cooked" list in this file; that lives in `cooked_log.md`.
 
+## Dish names
+
+Every dish, in proposals, the overview table and task titles, goes by its traditional, most common
+Indian name written in English letters, with its recipe number: `Masoor Pyaaz Dal (#441, x1/2)`
+(user, 17 Nov 2026). Start from the book's Indian name (the line under the title, shown by
+`_analysis/method.py`), but use the more common name when the book's is obscure.
+
 ## Task types and order
 
 Within a day, tasks appear in the order they are done: usually make-ahead, prep, pre-side, pre-main,
