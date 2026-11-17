@@ -27,3 +27,4 @@ side we had last week and the week before".
 - #474 peppery pigeon peas with garlic and cumin (week of 26 Oct 2026)
 
 Week of 2-6 Nov 2026 (add once cooked): #519, #183, #422, #74, #563, #634, #625.
+Week of 18-22 Nov 2026 (add once cooked): #178, #441, #634, #408, #503, #470, #507.
