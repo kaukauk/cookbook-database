@@ -40,4 +40,7 @@ This drops and rebuilds `cookbook.db` and prints a summary of books, recipe coun
 ## Other files
 
 - `660_curries_methodology.md`: detailed notes on the parsing and canonicalisation approach
-- `weeks/`, `PLAN_FORMAT.md`, `cooked_log.md`, `kitchen_inventory.txt`: my weekly meal plans and the pantry data they're built from
+- `weeks/`: one weekly meal plan per file, named after the shopping day (`weeks/2026-11-17.md`). Each file is written to be pasted into another AI that loads its tasks into Google Tasks. When tasks are added after a week has already been loaded, they also go in a separate add-on file (`weeks/2026-11-17-tues-wed.md`) holding only the new tasks, so it can be sent on its own without duplicating the rest. The main file stays the complete record of the week.
+- `PLAN_FORMAT.md`: the rules every weekly plan follows (workflow, shopping list, task types, mise en place, dish names)
+- `cooked_log.md`: dishes already made, so plans don't repeat them
+- `kitchen_inventory.txt`: what's in the kitchen, in the room, in the freezer, and the equipment

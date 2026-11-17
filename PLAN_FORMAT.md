@@ -48,6 +48,13 @@ worked example. The file's end use is to be handed to another AI that loads it i
 
 No "already cooked" list in this file; that lives in `cooked_log.md`.
 
+**Add-on files** (user, 17 Nov 2026). If tasks are added or moved after the week has been loaded into
+Google Tasks, update the main file so it stays the complete record, and also write the new tasks alone
+to `weeks/<date>-<what>.md` (e.g. `weeks/2026-11-17-tues-wed.md`) with its own prompt section and task
+count, so the user can send just that file without duplicating tasks. If a new task replaces one
+already loaded (e.g. shopping moved to another day), the prompt names that one task for the AI to
+delete and says to leave the rest alone.
+
 ## Dish names
 
 Every dish, in proposals, the overview table and task titles, goes by its traditional, most common
